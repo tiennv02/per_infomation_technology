@@ -19,6 +19,4 @@ Route::get('/', function () {
 Route::get('/checkDB', function ()
 {
     dd(DB::connection()->getDatabaseName());
-    var_dump(DB::connection()->getDatabaseName());
-    die();
 });
