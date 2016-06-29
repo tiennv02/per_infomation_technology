@@ -9,7 +9,7 @@
 namespace App\Http\Response;
 
 
-class JsonResult
+class Response
 {
     public $resultCode;
     public $resultMessage;
