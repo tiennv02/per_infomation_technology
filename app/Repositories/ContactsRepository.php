@@ -37,13 +37,13 @@ class ContactsRepository extends BaseRepository
      */
     public function store($inputs)
     {
-        $contact = new $this->model;
+        $contacts = new $this->model;
 
-        $contact->name = $inputs['name'];
-        $contact->email = $inputs['email'];
-        $contact->phone = $inputs['phone'];
-        $contact->content = $inputs['content'];
+        $contacts->name = $inputs['name'];
+        $contacts->email = $inputs['email'];
+        $contacts->phone = $inputs['phone'];
+        $contacts->content = $inputs['content'];
 
-        $contact->save();
+        $contacts->save();
     }
 }

@@ -1,11 +1,9 @@
 <?php namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Presenters\DatePresenter;
 
-class Contact extends Model  {
+class Contacts extends Model  {
 
-	use DatePresenter;
 
 	/**
 	 * The database table used by the model.

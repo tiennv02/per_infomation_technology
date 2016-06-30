@@ -15,7 +15,7 @@ class ProjectInfoTableSeeder extends Seeder
 
         $limit = 33;
         for ($i = 0; $i < $limit; $i++) {
-            DB::table('project_info')->insert([ //,
+            DB::table('project_info')->insert([
                 'name' => $faker->name,
             ]);
         }

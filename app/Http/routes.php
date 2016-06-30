@@ -10,11 +10,10 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
 Route::get('/', 'HomeController@index');
 
+Route::post('contacts/create', 'HomeController@contactsCreate');
 
-Route::get('/checkDB', function ()
-{
+Route::get('/checkDB', function () {
     dd(DB::connection()->getDatabaseName());
 });

@@ -1,5 +1,7 @@
 <?php namespace App\Http\Requests;
 
+use Illuminate\Http\Request;
+
 class ContactsRequest extends Request
 {
 
@@ -11,11 +13,10 @@ class ContactsRequest extends Request
     public function rules()
     {
         return [
-            'title' => 'required|max:256',
+            'name' => 'required|max:256',
             'email' => 'required|email|max:256',
             'phone' => 'required|phone|max:25',
-            'content' => 'required|max:1000',
-            'type' => 'required|max:10'
+            'content' => 'required|max:1000'
         ];
     }
 

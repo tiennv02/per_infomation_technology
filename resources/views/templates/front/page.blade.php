@@ -77,7 +77,7 @@
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <h1>Webcome to Development center</h1>
+            <h3>Webcome to Development center</h3>
             <hr>
             <p>Tận tâm - Nỗ lực - Vì quyền lợi khách hàng</p>
             <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
