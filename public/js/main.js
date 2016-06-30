@@ -35,8 +35,8 @@ function sendContact() {
             } else if (data.status === 422)//422 Unprocessable Entity
             {
             } else {
-                notifications('danger', 'Fail');
             }
+            notifications('danger', 'Thất bại');
         }
     });
 }

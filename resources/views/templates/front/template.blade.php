@@ -66,7 +66,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#about">Trang chủ</a>
+                    <a class="page-scroll" href="#home">Trang chủ</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#services">Dịch vụ</a>
@@ -99,12 +99,12 @@
             <h2><span>Chào mừng đến với 4EVER</span></h2>
             <hr>
             <p>Chúng Tôi luôn lắng nghe Bạn nói!</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Xem thêm</a>
+            <a href="#home" class="btn btn-primary btn-xl page-scroll">Xem thêm</a>
         </div>
     </div>
 </header>
 
-<section class="bg-primary" id="about">
+<section class="bg-primary" id="home">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">

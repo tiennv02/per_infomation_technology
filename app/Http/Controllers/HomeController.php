@@ -8,9 +8,8 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Http\Response\ContactsResponse;
 use Illuminate\Http\Request;
+use App\Http\Response\ContactsResponse;
 use App\Http\Requests\ContactsRequest;
 use App\Repositories\ContactsRepository;
 
@@ -28,7 +27,7 @@ class HomeController extends Controller
         return view("front.index");
     }
 
-    public function contactsCreate(Request $request)
+    public function contactsCreate(ContactsRequest $request)
     {
         $data = new ContactsResponse();
         try {
