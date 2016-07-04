@@ -12,21 +12,25 @@ use Illuminate\Http\Request;
 use App\Http\Responses\ContactsResponse;
 use App\Http\Requests\ContactsRequest;
 use App\Repositories\ContactsRepository;
+use App\Repositories\ProjectInfoRepository;
 use App\Jobs\SendMail;
 use App\Http\Objects\ObjectSendMail;
 
 class HomeController extends Controller
 {
     private $contactsRepository;
+    private $projectInfoRepository;
 
-    public function __construct(ContactsRepository $contactsRepository)
+    public function __construct(ContactsRepository $contactsRepository, ProjectInfoRepository $projectInfoRepository)
     {
         $this->contactsRepository = $contactsRepository;
+        $this->projectInfoRepository = $projectInfoRepository;
     }
 
     public function index()
     {
-        return view("front.index");
+        $lstProjectInfo = $this->projectInfoRepository->getLstProjectInfo();
+        return view("front.index")->with(compact('lstProjectInfo'));
     }
 
     public function contactsCreate(ContactsRequest $request)

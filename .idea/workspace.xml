@@ -2,123 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c140c434-2e25-4a28-bde9-c6aa1c195d43" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Objects/ObjectSendMail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Jobs/SendMail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/lang/en/front/verify.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/lang/vi/front/verify.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/emails/auth/password.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/emails/auth/verify.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Response/ContactsResponse.php" afterPath="$PROJECT_DIR$/app/Http/Responses/ContactsResponse.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Response/ProjectInfoResponse.php" afterPath="$PROJECT_DIR$/app/Http/Responses/ProjectInfoResponse.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Response/Response.php" afterPath="$PROJECT_DIR$/app/Http/Responses/Response.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/team/1.jpg" afterPath="$PROJECT_DIR$/public/img/team/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/team/2.jpg" afterPath="$PROJECT_DIR$/public/img/team/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/team/3.jpg" afterPath="$PROJECT_DIR$/public/img/team/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/ProjectInfo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Repositories/ProjectInfoRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/ContactsRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/ContactsRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mail.php" afterPath="$PROJECT_DIR$/config/mail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bootstrap-notify.js" afterPath="$PROJECT_DIR$/public/js/bootstrap-notify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/common.js" afterPath="$PROJECT_DIR$/public/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Contacts.php" afterPath="$PROJECT_DIR$/app/Models/Contacts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/agency.css" afterPath="$PROJECT_DIR$/public/css/agency.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/creative.js" afterPath="$PROJECT_DIR$/public/js/creative.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/templates/front/template.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/front/template.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/Gruntfile.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/LICENSE" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/README.md" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/bootstrap.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/creative.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/creative.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/creative.min.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/creative.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/magnific-popup.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/magnific-popup.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/animated.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/animated.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/rotated-flipped.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_animated.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_animated.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_fixed-width.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/index.html" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/bootstrap.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/creative.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/creative.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/creative.min.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/creative.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.easing.min.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.easing.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.fittext.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.fittext.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.magnific-popup.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.magnific-popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.magnific-popup.min.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.magnific-popup.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/scrollreveal.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/scrollreveal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/creative.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/creative.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/mixins.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/variables.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/package.json" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/LICENSE" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/README.md" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/bootstrap.css" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/landing-page.css" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/landing-page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/rotated-flipped.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/spinning.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/spinning.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_fixed-width.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_spinning.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_spinning.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/index.html" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/bootstrap.js" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/jquery.js" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/jquery.js" />
     </list>
     <ignored path="per_infomation_technology.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -145,50 +37,144 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65384614">
-              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            <state vertical-scroll-proportion="-3.2">
+              <caret line="32" column="64" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="64" />
               <folding>
                 <element signature="e#6#96#0#PHP" expanded="true" />
                 <element signature="e#131#159#0#PHP" expanded="true" />
-                <marker date="1467574348380" expanded="true" signature="381:1794" placeholder="{...}" />
-                <marker date="1467574348380" expanded="true" signature="697:1792" placeholder="{...}" />
-                <marker date="1467574348380" expanded="true" signature="766:1628" placeholder="..." />
-                <marker date="1467574348380" expanded="true" signature="928:1478" placeholder="..." />
+                <marker date="1467650366997" expanded="true" signature="1065:1927" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendMail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Jobs/SendMail.php">
+      <file leaf-file-name="template.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/templates/front/template.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6545455">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="30" />
+            <state vertical-scroll-proportion="-6.2909093">
+              <caret line="62" column="104" selection-start-line="62" selection-start-column="104" selection-end-line="62" selection-end-column="104" />
               <folding>
-                <element signature="e#28#45#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#5;n#div#1;n#div#0;n#aside#0;n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1467652477472" expanded="true" signature="3631:3736" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="9471:9631" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="9718:9880" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="9967:10161" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="10250:10406" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="10493:10674" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11260:14581" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11292:14562" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11318:11535" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11362:11520" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11561:14547" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11593:14532" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11623:14517" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11636:12287" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11673:11765" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11802:12273" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11841:11941" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="11977:12258" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="12008:12243" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="12326:12974" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="12363:12455" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="12492:12960" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="12531:12628" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="12664:12945" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="12695:12930" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="12987:13647" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="13024:13116" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="13153:13633" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="13192:13301" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="13337:13618" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="13368:13603" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="13686:14335" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="13723:13815" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="13852:14321" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="13891:13989" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="14025:14306" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="14056:14291" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="14374:14503" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="14411:14489" placeholder="..." />
+                <marker date="1467652477472" expanded="true" signature="14424:14474" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mailer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Mail/Mailer.php">
+      <file leaf-file-name="en.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/gentelella-master/vendors/parsleyjs/src/i18n/en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.2909093">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+            <state vertical-scroll-proportion="-5.275862">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObjectSendMail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Objects/ObjectSendMail.php">
+      <file leaf-file-name="en.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/gentelella-master/vendors/parsleyjs/dist/i18n/en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1090908">
-              <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactsRequest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.27217126">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agency.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/agency.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0545454">
+              <caret line="699" column="21" selection-start-line="699" selection-start-column="21" selection-end-line="699" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="creative.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/creative.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.137931">
+              <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1467647984085" expanded="true" signature="1709:2168" placeholder="{&quot;delegate&quot;: 'a'...}" />
+                <marker date="1467647984085" expanded="true" signature="1867:2045" placeholder="{&quot;enabled&quot;: true...}" />
+                <marker date="1467647984085" expanded="true" signature="2064:2160" placeholder="{&quot;tError&quot;: '&lt;a href=&quot;%url%&quot;&gt;The image #%curr%&lt;/a&gt; could not be loaded.'...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectInfoRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/ProjectInfoRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.797619">
+              <caret line="24" column="37" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="37" />
+              <folding>
+                <element signature="e#35#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/BaseRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.0384617">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -259,22 +245,18 @@
         <option value="$PROJECT_DIR$/resources/views/front/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/front/page.blade.php" />
         <option value="$PROJECT_DIR$/public/css/social-buttons.css" />
-        <option value="$PROJECT_DIR$/public/css/agency.css" />
         <option value="$PROJECT_DIR$/app/Repositories/ContactRepository.php" />
-        <option value="$PROJECT_DIR$/app/Models/Contacts.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Request.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_29_084729_create_contacts_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/ProjectInfoTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_30_091555_create_contacts_table.php" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php" />
         <option value="$PROJECT_DIR$/public/js/common.js" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
         <option value="$PROJECT_DIR$/public/js/bootstrap-notify.js" />
         <option value="$PROJECT_DIR$/public/css/common.css" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
-        <option value="$PROJECT_DIR$/resources/views/templates/front/template.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Responses/ContactsResponse.php" />
         <option value="$PROJECT_DIR$/app/Http/Responses/ProjectInfoResponse.php" />
         <option value="$PROJECT_DIR$/app/Http/Responses/Response.php" />
@@ -284,7 +266,14 @@
         <option value="$PROJECT_DIR$/config/mail.php" />
         <option value="$PROJECT_DIR$/app/Jobs/SendMail.php" />
         <option value="$PROJECT_DIR$/app/Http/Objects/ObjectSendMail.php" />
+        <option value="$PROJECT_DIR$/public/js/creative.js" />
+        <option value="$PROJECT_DIR$/app/Models/ProjectInfo.php" />
+        <option value="$PROJECT_DIR$/app/Models/Contacts.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/ProjectInfoRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/public/css/agency.css" />
+        <option value="$PROJECT_DIR$/resources/views/templates/front/template.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php" />
       </list>
     </option>
   </component>
@@ -369,7 +358,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -397,7 +386,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -431,6 +420,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -576,7 +591,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Repositories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Requests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -604,7 +659,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -632,17 +687,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel5_site_master" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\per_infomation_technology\resources\lang\vi" />
-      <recent name="C:\xampp\htdocs\per_infomation_technology\resources\views" />
-      <recent name="C:\xampp\htdocs\per_infomation_technology\resources\lang\en" />
-      <recent name="C:\xampp\htdocs\per_infomation_technology\app\Jobs" />
-      <recent name="C:\xampp\htdocs\per_infomation_technology\app\Http\Requests" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\per_infomation_technology\resources\lang\en\front" />
       <recent name="C:\xampp\htdocs\per_infomation_technology\resources\views\front" />
       <recent name="C:\xampp\htdocs\per_infomation_technology\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\per_infomation_technology\app\Repositories" />
+      <recent name="C:\xampp\htdocs\per_infomation_technology\resources\lang\vi" />
+      <recent name="C:\xampp\htdocs\per_infomation_technology\resources\views" />
+      <recent name="C:\xampp\htdocs\per_infomation_technology\resources\lang\en" />
+      <recent name="C:\xampp\htdocs\per_infomation_technology\app\Jobs" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.localhost">
@@ -707,7 +762,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
@@ -717,12 +772,12 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.48487142" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2118003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21471927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.48789713" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.48789713" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.396072" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39443535" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -785,81 +840,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/css/notifications/alert_bangtidy.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3535032">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/server_databases.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3789809">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/phpmyadmin.css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6496815">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/js/whitelist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43312103">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/js/get_scripts.js.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48726115">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.1910828">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ProjectInfoTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33144477">
-          <caret line="8989" column="156" selection-start-line="8989" selection-start-column="156" selection-end-line="8989" selection-end-column="156" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/db_structure.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Contacts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23859648">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -947,21 +931,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1432585">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23876405">
           <caret line="14" column="61" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="61" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,7 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37921348">
           <caret line="24" column="19" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,7 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.71629214">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13597734">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,71 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64659685">
           <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc;n#sendContact#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/front/template.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26911315">
-          <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
-          <folding>
-            <marker date="1467570814290" expanded="true" signature="3595:3704" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="14161:14173" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="14947:20376" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="14983:20357" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="15017:15298" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="15073:15275" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="15332:20338" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="15376:20315" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="15422:20288" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="15455:16530" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="15516:15660" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="15721:16496" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="15788:15980" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="16044:16457" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="16107:16414" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="16589:17661" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="16650:16794" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="16855:17627" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="16922:17111" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="17175:17588" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="17238:17545" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="17694:18778" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="17755:17899" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="17960:18744" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="18027:18228" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="18292:18705" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="18355:18662" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="18837:19910" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="18898:19042" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="19103:19876" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="19170:19360" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="19424:19837" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="19487:19794" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="19969:20258" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="20030:20224" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="20071:20185" placeholder="..." />
-            <marker date="1467570814290" expanded="true" signature="27596:27698" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Responses/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14325842">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Responses/ProjectInfoResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14325842">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1488764">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,7 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09550562">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,7 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.3076925">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.3076925">
           <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,7 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45396826">
           <caret line="1081" column="45" selection-start-line="1081" selection-start-column="45" selection-end-line="1081" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1121,7 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21587302">
           <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,7 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60117304">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1137,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53968257">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +1043,7 @@
         <state vertical-scroll-proportion="0.48253968">
           <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
-            <element signature="e#35#59#0#PHP" expanded="true" />
+            <element signature="e#35#59#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1155,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="6.6920633">
           <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.576923">
           <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,7 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5936508">
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,21 +1073,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2972028">
           <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Objects/ObjectSendMail.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/auth/password.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1090908">
-          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Mail/Mailer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2909093">
+        <state vertical-scroll-proportion="0.35443038">
           <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
           <folding />
         </state>
@@ -1201,26 +1094,184 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/SendMail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6545455">
+        <state vertical-scroll-proportion="0.19303797">
           <caret line="42" column="30" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="30" />
           <folding>
-            <element signature="e#28#45#0#PHP" expanded="true" />
+            <element signature="e#28#45#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Responses/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54937166">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Responses/ProjectInfoResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82405746">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Objects/ObjectSendMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7414722">
+          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Contacts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18312387">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/ProjectInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30520648">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/creative.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.137931">
+          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1467647984085" expanded="true" signature="1709:2168" placeholder="{&quot;delegate&quot;: 'a'...}" />
+            <marker date="1467647984085" expanded="true" signature="1867:2045" placeholder="{&quot;enabled&quot;: true...}" />
+            <marker date="1467647984085" expanded="true" signature="2064:2160" placeholder="{&quot;tError&quot;: '&lt;a href=&quot;%url%&quot;&gt;The image #%curr%&lt;/a&gt; could not be loaded.'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/BaseRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0384617">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/ProjectInfoRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.797619">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="e#35#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65384614">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        <state vertical-scroll-proportion="-3.2">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="64" />
           <folding>
             <element signature="e#6#96#0#PHP" expanded="true" />
             <element signature="e#131#159#0#PHP" expanded="true" />
-            <marker date="1467574348380" expanded="true" signature="381:1794" placeholder="{...}" />
-            <marker date="1467574348380" expanded="true" signature="697:1792" placeholder="{...}" />
-            <marker date="1467574348380" expanded="true" signature="766:1628" placeholder="..." />
-            <marker date="1467574348380" expanded="true" signature="928:1478" placeholder="..." />
+            <marker date="1467650366997" expanded="true" signature="1065:1927" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/views/4d728e23b20a54aade16924f50d2dc6d734a7113.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8168761">
+          <caret line="589" column="0" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/agency.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0545454">
+          <caret line="699" column="21" selection-start-line="699" selection-start-column="21" selection-end-line="699" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/gentelella-master/vendors/parsleyjs/src/i18n/en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.275862">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/gentelella-master/vendors/parsleyjs/dist/i18n/en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/front/template.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2909093">
+          <caret line="62" column="104" selection-start-line="62" selection-start-column="104" selection-end-line="62" selection-end-column="104" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#5;n#div#1;n#div#0;n#aside#0;n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1467652477472" expanded="true" signature="3631:3736" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="9471:9631" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="9718:9880" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="9967:10161" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="10250:10406" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="10493:10674" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11260:14581" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11292:14562" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11318:11535" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11362:11520" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11561:14547" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11593:14532" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11623:14517" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11636:12287" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11673:11765" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11802:12273" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11841:11941" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="11977:12258" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="12008:12243" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="12326:12974" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="12363:12455" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="12492:12960" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="12531:12628" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="12664:12945" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="12695:12930" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="12987:13647" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="13024:13116" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="13153:13633" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="13192:13301" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="13337:13618" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="13368:13603" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="13686:14335" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="13723:13815" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="13852:14321" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="13891:13989" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="14025:14306" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="14056:14291" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="14374:14503" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="14411:14489" placeholder="..." />
+            <marker date="1467652477472" expanded="true" signature="14424:14474" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27217126">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>

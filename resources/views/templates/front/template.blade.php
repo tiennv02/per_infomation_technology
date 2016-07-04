@@ -60,7 +60,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand page-scroll font-size-16"
-               href="#page-top"><span>Information system development</span></a>
+               href="#page-top"><span class="glyphicon glyphicon-send"></span><span>&nbsp;&nbsp;VIETSTAR</span></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -79,7 +79,7 @@
                     <a class="page-scroll" href="#partner">Đối tác</a>
                 </li>
                 {{--<li>--}}
-                    {{--<a class="page-scroll" href="#about">Thông tin</a>--}}
+                {{--<a class="page-scroll" href="#about">Thông tin</a>--}}
                 {{--</li>--}}
                 <li>
                     <a class="page-scroll" href="#team">Team</a>
@@ -185,102 +185,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
+            @foreach($lstProjectInfo as $iProjectInfo)
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal{{$iProjectInfo->id}}" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
                         </div>
+                        <img src="img/portfolio/{{$iProjectInfo->image}}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>{{$iProjectInfo->name}}</h4>
+                        <p class="text-muted">{{$iProjectInfo->description}}</p>
                     </div>
-                    <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                </a>
-
-                <div class="portfolio-caption">
-                    <h4>Round Icons</h4>
-
-                    <p class="text-muted">Graphic Design</p>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                </a>
-
-                <div class="portfolio-caption">
-                    <h4>Startup Framework</h4>
-
-                    <p class="text-muted">Website Design</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                </a>
-
-                <div class="portfolio-caption">
-                    <h4>Treehouse</h4>
-
-                    <p class="text-muted">Website Design</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                </a>
-
-                <div class="portfolio-caption">
-                    <h4>Golden</h4>
-
-                    <p class="text-muted">Website Design</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                </a>
-
-                <div class="portfolio-caption">
-                    <h4>Escape</h4>
-
-                    <p class="text-muted">Website Design</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                </a>
-
-                <div class="portfolio-caption">
-                    <h4>Dreams</h4>
-
-                    <p class="text-muted">Website Design</p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
@@ -298,49 +218,38 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2 col-sm-6">
-                            <a href="#">
-                                <img src="img/logos/nut.png" class="img-responsive img-centered img-team-area-120p"
-                                     alt="">
+                            <img src="img/logos/nut.png" class="img-responsive img-centered img-team-area-120p"
+                                 alt="">
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <img src="img/logos/taxigroup.png"
+                                 class="img-responsive img-centered img-team-area-120p" alt="">
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <img src="img/logos/logo-hnhotel.png"
+                                 class="img-responsive img-centered img-team-area-120p" alt="">
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <img src="img/logos/logo-namcuong.png"
+                                 class="img-responsive img-centered img-team-area-120p" alt="">
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-6">
-                            <a href="#">
-                                <img src="img/logos/taxigroup.png"
-                                     class="img-responsive img-centered img-team-area-120p" alt="">
-                            </a>
+                            <img src="img/logos/kenh14.PNG" class="img-responsive img-centered img-team-area-120p"
+                                 alt="">
                         </div>
                         <div class="col-md-2 col-sm-6">
-                            <a href="#">
-                                <img src="img/logos/logo-hnhotel.png"
-                                     class="img-responsive img-centered img-team-area-120p" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-6">
-                            <a href="#">
-                                <img src="img/logos/logo-namcuong.png"
-                                     class="img-responsive img-centered img-team-area-120p" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-6">
-                            <a href="#">
-                                <img src="img/logos/kenh14.PNG" class="img-responsive img-centered img-team-area-120p"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-6">
-                            <a href="#">
-                                <img src="img/logos/phunutoday.png" style="height: 60px"
-                                     class="img-responsive img-centered img-team-area-120p" alt="">
-                            </a>
+                            <img src="img/logos/phunutoday.png" style="height: 60px"
+                                 class="img-responsive img-centered img-team-area-120p" alt="">
                         </div>
                     </div>
                     {{--<div class="row">--}}
-                        {{--<div class="col-md-2 col-sm-6">--}}
-                            {{--<a href="#">--}}
-                                {{--<img src="img/logos/logovs.png"  style="height: 60px"--}}
-                                     {{--class="img-responsive img-centered img-team-area-120p" alt="">--}}
-                            {{--</a>--}}
-                        {{--</div>--}}
+                    {{--<div class="col-md-2 col-sm-6">--}}
+                    {{--<a href="#">--}}
+                    {{--<img src="img/logos/logovs.png"  style="height: 60px"--}}
+                    {{--class="img-responsive img-centered img-team-area-120p" alt="">--}}
+                    {{--</a>--}}
+                    {{--</div>--}}
                     {{--</div>--}}
                 </div>
             </aside>
@@ -349,92 +258,92 @@
 </section>
 
 {{--<section id="about">--}}
-    {{--<div class="container">--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-lg-12 text-center">--}}
-                {{--<h2 class="section-heading">About</h2>--}}
+{{--<div class="container">--}}
+{{--<div class="row">--}}
+{{--<div class="col-lg-12 text-center">--}}
+{{--<h2 class="section-heading">About</h2>--}}
 
-                {{--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-lg-12">--}}
-                {{--<ul class="timeline">--}}
-                    {{--<li>--}}
-                        {{--<div class="timeline-image">--}}
-                            {{--<img class="img-circle img-responsive" src="img/about/1.jpg" alt="">--}}
-                        {{--</div>--}}
-                        {{--<div class="timeline-panel">--}}
-                            {{--<div class="timeline-heading">--}}
-                                {{--<h4>2009-2011</h4>--}}
-                                {{--<h4 class="subheading">Our Humble Beginnings</h4>--}}
-                            {{--</div>--}}
-                            {{--<div class="timeline-body">--}}
-                                {{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
-                                    {{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
-                                    {{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</li>--}}
-                    {{--<li class="timeline-inverted">--}}
-                        {{--<div class="timeline-image">--}}
-                            {{--<img class="img-circle img-responsive" src="img/about/2.jpg" alt="">--}}
-                        {{--</div>--}}
-                        {{--<div class="timeline-panel">--}}
-                            {{--<div class="timeline-heading">--}}
-                                {{--<h4>March 2011</h4>--}}
-                                {{--<h4 class="subheading">An Agency is Born</h4>--}}
-                            {{--</div>--}}
-                            {{--<div class="timeline-body">--}}
-                                {{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
-                                    {{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
-                                    {{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</li>--}}
-                    {{--<li>--}}
-                        {{--<div class="timeline-image">--}}
-                            {{--<img class="img-circle img-responsive" src="img/about/3.jpg" alt="">--}}
-                        {{--</div>--}}
-                        {{--<div class="timeline-panel">--}}
-                            {{--<div class="timeline-heading">--}}
-                                {{--<h4>December 2012</h4>--}}
-                                {{--<h4 class="subheading">Transition to Full Service</h4>--}}
-                            {{--</div>--}}
-                            {{--<div class="timeline-body">--}}
-                                {{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
-                                    {{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
-                                    {{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</li>--}}
-                    {{--<li class="timeline-inverted">--}}
-                        {{--<div class="timeline-image">--}}
-                            {{--<img class="img-circle img-responsive" src="img/about/4.jpg" alt="">--}}
-                        {{--</div>--}}
-                        {{--<div class="timeline-panel">--}}
-                            {{--<div class="timeline-heading">--}}
-                                {{--<h4>July 2014</h4>--}}
-                                {{--<h4 class="subheading">Phase Two Expansion</h4>--}}
-                            {{--</div>--}}
-                            {{--<div class="timeline-body">--}}
-                                {{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
-                                    {{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
-                                    {{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</li>--}}
-                    {{--<li class="timeline-inverted">--}}
-                        {{--<div class="timeline-image">--}}
-                            {{--<h4>Be Part--}}
-                                {{--<br>Of Our--}}
-                                {{--<br>Story!</h4>--}}
-                        {{--</div>--}}
-                    {{--</li>--}}
-                {{--</ul>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
+{{--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>--}}
+{{--</div>--}}
+{{--</div>--}}
+{{--<div class="row">--}}
+{{--<div class="col-lg-12">--}}
+{{--<ul class="timeline">--}}
+{{--<li>--}}
+{{--<div class="timeline-image">--}}
+{{--<img class="img-circle img-responsive" src="img/about/1.jpg" alt="">--}}
+{{--</div>--}}
+{{--<div class="timeline-panel">--}}
+{{--<div class="timeline-heading">--}}
+{{--<h4>2009-2011</h4>--}}
+{{--<h4 class="subheading">Our Humble Beginnings</h4>--}}
+{{--</div>--}}
+{{--<div class="timeline-body">--}}
+{{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
+{{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
+{{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
+{{--</div>--}}
+{{--</div>--}}
+{{--</li>--}}
+{{--<li class="timeline-inverted">--}}
+{{--<div class="timeline-image">--}}
+{{--<img class="img-circle img-responsive" src="img/about/2.jpg" alt="">--}}
+{{--</div>--}}
+{{--<div class="timeline-panel">--}}
+{{--<div class="timeline-heading">--}}
+{{--<h4>March 2011</h4>--}}
+{{--<h4 class="subheading">An Agency is Born</h4>--}}
+{{--</div>--}}
+{{--<div class="timeline-body">--}}
+{{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
+{{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
+{{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
+{{--</div>--}}
+{{--</div>--}}
+{{--</li>--}}
+{{--<li>--}}
+{{--<div class="timeline-image">--}}
+{{--<img class="img-circle img-responsive" src="img/about/3.jpg" alt="">--}}
+{{--</div>--}}
+{{--<div class="timeline-panel">--}}
+{{--<div class="timeline-heading">--}}
+{{--<h4>December 2012</h4>--}}
+{{--<h4 class="subheading">Transition to Full Service</h4>--}}
+{{--</div>--}}
+{{--<div class="timeline-body">--}}
+{{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
+{{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
+{{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
+{{--</div>--}}
+{{--</div>--}}
+{{--</li>--}}
+{{--<li class="timeline-inverted">--}}
+{{--<div class="timeline-image">--}}
+{{--<img class="img-circle img-responsive" src="img/about/4.jpg" alt="">--}}
+{{--</div>--}}
+{{--<div class="timeline-panel">--}}
+{{--<div class="timeline-heading">--}}
+{{--<h4>July 2014</h4>--}}
+{{--<h4 class="subheading">Phase Two Expansion</h4>--}}
+{{--</div>--}}
+{{--<div class="timeline-body">--}}
+{{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
+{{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
+{{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
+{{--</div>--}}
+{{--</div>--}}
+{{--</li>--}}
+{{--<li class="timeline-inverted">--}}
+{{--<div class="timeline-image">--}}
+{{--<h4>Be Part--}}
+{{--<br>Of Our--}}
+{{--<br>Story!</h4>--}}
+{{--</div>--}}
+{{--</li>--}}
+{{--</ul>--}}
+{{--</div>--}}
+{{--</div>--}}
+{{--</div>--}}
 {{--</section>--}}
 
 <section id="team" class="bg-light-gray">
@@ -604,8 +513,42 @@
         </div>
     </div>
 </footer>
-
-<!--notifications_start-->
+<!-- Portfolio Modals -->
+<!-- Use the modals below to showcase details about your portfolio projects! -->
+@foreach($lstProjectInfo as $iProjectInfo)
+        <!-- Portfolio Modal -->
+<div class="portfolio-modal modal fade" id="portfolioModal{{$iProjectInfo->id}}" tabindex="-1" role="dialog"
+     aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>{{$iProjectInfo->name}}</h2>
+                        <p class="item-intro text-muted">{{$iProjectInfo->description}}</p>
+                        <img class="img-responsive img-centered" src="img/portfolio/{{$iProjectInfo->image_large}}"
+                             alt="{{$iProjectInfo->name}}">
+                        {!! $iProjectInfo->content!!}
+                        <br/>
+                        <br/>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endforeach
+        <!--notifications_start-->
 <div class='notifications bottom-right'></div>
 <!--notifications_end-->
 <!--loading panel_start-->

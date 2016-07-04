@@ -6,7 +6,7 @@ class Contacts extends Model  {
 
 
 	/**
-	 * The database table used by the model.
+	 * The database table contacts by the model.
 	 *
 	 * @var string
 	 */
