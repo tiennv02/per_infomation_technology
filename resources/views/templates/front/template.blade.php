@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/agency.css" type="text/css">
     <link rel="stylesheet" href="css/social-buttons.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
 
     <!--notifications_start-->
     <link rel="stylesheet" href="css/bootstrap_notify.css" type="text/css">
@@ -77,9 +78,9 @@
                 <li>
                     <a class="page-scroll" href="#partner">Đối tác</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#about">Thông tin</a>
-                </li>
+                {{--<li>--}}
+                    {{--<a class="page-scroll" href="#about">Thông tin</a>--}}
+                {{--</li>--}}
                 <li>
                     <a class="page-scroll" href="#team">Team</a>
                 </li>
@@ -96,7 +97,7 @@
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <h2><span>Chào mừng đến với 4EVER</span></h2>
+            <h2><span>Chào mừng đến với VietStar</span></h2>
             <hr>
             <p>Chúng Tôi luôn lắng nghe Bạn nói!</p>
             <a href="#home" class="btn btn-primary btn-xl page-scroll">Xem thêm</a>
@@ -180,7 +181,7 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Sản phẩm</h2>
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                {{--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>--}}
             </div>
         </div>
         <div class="row">
@@ -292,126 +293,149 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <h2 class="section-heading">Đối tác</h2>
-
-                            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                            {{--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>--}}
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-2 col-sm-6">
                             <a href="#">
-                                <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                                <img src="img/logos/nut.png" class="img-responsive img-centered img-team-area-120p"
+                                     alt="">
                             </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-2 col-sm-6">
                             <a href="#">
-                                <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                                <img src="img/logos/taxigroup.png"
+                                     class="img-responsive img-centered img-team-area-120p" alt="">
                             </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-2 col-sm-6">
                             <a href="#">
-                                <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                                <img src="img/logos/logo-hnhotel.png"
+                                     class="img-responsive img-centered img-team-area-120p" alt="">
                             </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-2 col-sm-6">
                             <a href="#">
-                                <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                                <img src="img/logos/logo-namcuong.png"
+                                     class="img-responsive img-centered img-team-area-120p" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <a href="#">
+                                <img src="img/logos/kenh14.PNG" class="img-responsive img-centered img-team-area-120p"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <a href="#">
+                                <img src="img/logos/phunutoday.png" style="height: 60px"
+                                     class="img-responsive img-centered img-team-area-120p" alt="">
                             </a>
                         </div>
                     </div>
+                    {{--<div class="row">--}}
+                        {{--<div class="col-md-2 col-sm-6">--}}
+                            {{--<a href="#">--}}
+                                {{--<img src="img/logos/logovs.png"  style="height: 60px"--}}
+                                     {{--class="img-responsive img-centered img-team-area-120p" alt="">--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
                 </div>
             </aside>
         </div>
     </div>
 </section>
 
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">About</h2>
+{{--<section id="about">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-lg-12 text-center">--}}
+                {{--<h2 class="section-heading">About</h2>--}}
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2012</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2014</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-                                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>Be Part
-                                <br>Of Our
-                                <br>Story!</h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+                {{--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-lg-12">--}}
+                {{--<ul class="timeline">--}}
+                    {{--<li>--}}
+                        {{--<div class="timeline-image">--}}
+                            {{--<img class="img-circle img-responsive" src="img/about/1.jpg" alt="">--}}
+                        {{--</div>--}}
+                        {{--<div class="timeline-panel">--}}
+                            {{--<div class="timeline-heading">--}}
+                                {{--<h4>2009-2011</h4>--}}
+                                {{--<h4 class="subheading">Our Humble Beginnings</h4>--}}
+                            {{--</div>--}}
+                            {{--<div class="timeline-body">--}}
+                                {{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
+                                    {{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
+                                    {{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</li>--}}
+                    {{--<li class="timeline-inverted">--}}
+                        {{--<div class="timeline-image">--}}
+                            {{--<img class="img-circle img-responsive" src="img/about/2.jpg" alt="">--}}
+                        {{--</div>--}}
+                        {{--<div class="timeline-panel">--}}
+                            {{--<div class="timeline-heading">--}}
+                                {{--<h4>March 2011</h4>--}}
+                                {{--<h4 class="subheading">An Agency is Born</h4>--}}
+                            {{--</div>--}}
+                            {{--<div class="timeline-body">--}}
+                                {{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
+                                    {{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
+                                    {{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</li>--}}
+                    {{--<li>--}}
+                        {{--<div class="timeline-image">--}}
+                            {{--<img class="img-circle img-responsive" src="img/about/3.jpg" alt="">--}}
+                        {{--</div>--}}
+                        {{--<div class="timeline-panel">--}}
+                            {{--<div class="timeline-heading">--}}
+                                {{--<h4>December 2012</h4>--}}
+                                {{--<h4 class="subheading">Transition to Full Service</h4>--}}
+                            {{--</div>--}}
+                            {{--<div class="timeline-body">--}}
+                                {{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
+                                    {{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
+                                    {{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</li>--}}
+                    {{--<li class="timeline-inverted">--}}
+                        {{--<div class="timeline-image">--}}
+                            {{--<img class="img-circle img-responsive" src="img/about/4.jpg" alt="">--}}
+                        {{--</div>--}}
+                        {{--<div class="timeline-panel">--}}
+                            {{--<div class="timeline-heading">--}}
+                                {{--<h4>July 2014</h4>--}}
+                                {{--<h4 class="subheading">Phase Two Expansion</h4>--}}
+                            {{--</div>--}}
+                            {{--<div class="timeline-body">--}}
+                                {{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
+                                    {{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
+                                    {{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</li>--}}
+                    {{--<li class="timeline-inverted">--}}
+                        {{--<div class="timeline-image">--}}
+                            {{--<h4>Be Part--}}
+                                {{--<br>Of Our--}}
+                                {{--<br>Story!</h4>--}}
+                        {{--</div>--}}
+                    {{--</li>--}}
+                {{--</ul>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</section>--}}
 
 <section id="team" class="bg-light-gray">
     <div class="container">
@@ -419,30 +443,30 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Team</h2>
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                {{--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>--}}
             </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                    <h4>Kay Garland</h4>
+                    <img src="img/team/1.jpg" class="img-responsive img-circle img-team-area" alt="">
+                    <h4>Nguyễn Khánh</h4>
 
                     <p class="text-muted">Lead Designer</p>
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
+                        {{--<li><a href="#"><i class="fa fa-twitter"></i></a>--}}
+                        {{--</li>--}}
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        {{--<li><a href="#"><i class="fa fa-linkedin"></i></a>--}}
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                    <h4>Larry Parker</h4>
+                    <img src="img/team/2.jpg" class="img-responsive img-circle img-team-area" alt="">
+                    <h4>Nguyễn Văn Tiến</h4>
 
                     <p class="text-muted">Lead Marketer</p>
                     <ul class="list-inline social-buttons">
@@ -457,25 +481,29 @@
             </div>
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                    <h4>Diana Pertersen</h4>
+                    <img src="img/team/3.jpg" class="img-responsive img-circle img-team-area" alt="">
+                    <h4>Lê Hoài</h4>
 
                     <p class="text-muted">Lead Developer</p>
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
+                        {{--<li><a href="#"><i class="fa fa-twitter"></i></a>--}}
+                        {{--</li>--}}
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
+                        {{--<li><a href="#"><i class="fa fa-linkedin"></i></a>--}}
+                        {{--</li>--}}
                     </ul>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-                    laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                <p class="large text-muted">Cảm giác được hỗ trợ, chia sẻ và lắng nghe, mang tới giải pháp mới cho khách
+                    hàng,
+                    và sự hài lòng của khách hàng khi sử dụng sản phẩm của
+                    VietStar chính là nguồn động viên vô giá dành cho chúng Tôi.
+
+                    <br>Chúng Tôi luôn cố gắng từng giây, từng phút để phục vụ Khách hàng.</p>
             </div>
         </div>
     </div>
@@ -487,20 +515,19 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Liên hệ</h2>
 
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Chúng Tôi sẽ sớm liên lạc với Bạn ngay khi nhận được thông
+                    báo!.</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="contact-area-left color-white">
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour</p>
+                    <p>Hãy liên hệ với Chúng Tôi để nhận được sự hỗ trợ, giải pháp và tư vấn sản phẩm</p>
                     <address class="single-address">
-                        <p>P.O. Box 240000. Huntsville, AL 35813, USA Street address: 305</p>
 
-                        <p>tiennv02@gmail.com</p>
+                        <p>Email: tiennv02@gmail.com</p>
 
-                        <p>(84) 8689 02705</p>
+                        <p>Phone: (84) 8689 02705</p>
                     </address>
                 </div>
             </div>
@@ -552,7 +579,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Copyright © Your Website 2014</span>
+                <span class="copyright">Copyright © Tien Nguyen - 2014</span>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
@@ -566,9 +593,11 @@
             </div>
             <div class="col-md-4">
                 <ul class="list-inline quicklinks">
-                    <li><a href="#">Privacy Policy</a>
+                    <li><a href="#home" class="text-decoration-none"><p><span class="glyphicon glyphicon-home"></span>
+                                Về đầu trang</p></a>
                     </li>
-                    <li><a href="#">Terms of Use</a>
+                    <li><a href="#contact" class="text-decoration-none"><p><span
+                                        class="glyphicon glyphicon-envelope"></span> Liên hệ</p></a>
                     </li>
                 </ul>
             </div>
@@ -584,7 +613,7 @@
     <div class="loadingPanel-div">
         <img width="32" height="32"
              alt="Loading"
-             src="img/ajax-loader.gif" />
+             src="img/ajax-loader.gif"/>
         Loading ..
     </div>
 </div>

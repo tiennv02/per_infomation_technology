@@ -1,6 +1,7 @@
 <?php namespace App\Repositories;
 
 use App\Models\Contacts;
+use App\Http\Responses\Response;
 
 class ContactsRepository extends BaseRepository
 {
@@ -37,13 +38,18 @@ class ContactsRepository extends BaseRepository
      */
     public function store($inputs)
     {
-        $contacts = new $this->model;
-
-        $contacts->name = $inputs['name'];
-        $contacts->email = $inputs['email'];
-        $contacts->phone = $inputs['phone'];
-        $contacts->content = $inputs['content'];
-
-        $contacts->save();
+        $data = new Response();
+        try {
+            $contacts = new $this->model;
+            $contacts->name = $inputs['name'];
+            $contacts->email = $inputs['email'];
+            $contacts->phone = $inputs['phone'];
+            $contacts->content = $inputs['content'];
+            $contacts->save();
+        } catch (Exception $e) {
+            $data->setResultCode('ERROR');
+            $data->setResultMessage($e);
+        }
+        return $data;
     }
 }

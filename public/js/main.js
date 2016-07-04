@@ -23,20 +23,23 @@ function sendContact() {
         success: function (data) {
             $('.loadingPanel').toggle();
             if (data.resultCode == 'OK') {
-                notifications('success', 'Hoàn thành');
+                Common_notifications('success', 'Hoàn thành');
             } else {
-                notifications('danger', data.resultMessage);
+                Common_notifications('danger', data.resultMessage);
             }
         },
         error: function (data) {
             $('.loadingPanel').toggle();
-            if (data.status === 401)//Unauthorized
-            {
-            } else if (data.status === 422)//422 Unprocessable Entity
-            {
-            } else {
+            //var response =  jQuery.parseJSON(data.responseText);
+            //var errors='';
+            //$.each( errors , function( key, value ) {
+            //    errors +=  value[0] + '\n'; //showing only the first error.
+            //});
+            var errors = '';
+            for(datos in data.responseJSON){
+                errors += data.responseJSON[datos] + '<br/>';
             }
-            notifications('danger', 'Thất bại');
+            Common_showErrors(data.status, errors);
         }
     });
 }

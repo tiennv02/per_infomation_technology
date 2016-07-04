@@ -6,7 +6,7 @@
  * Time: 5:12 PM
  */
 
-namespace App\Http\Response;
+namespace App\Http\Responses;
 
 
 class Response

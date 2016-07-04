@@ -6,7 +6,7 @@
  * Time: 5:59 PM
  */
 
-namespace App\Http\Response;
+namespace App\Http\Responses;
 
 
 class ContactsResponse extends Response

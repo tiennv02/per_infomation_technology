@@ -2,267 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c140c434-2e25-4a28-bde9-c6aa1c195d43" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/Request.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/.bowerrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/.env.example" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/.idea/blade.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Article.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/ArticleCategory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Console/Commands/Inspire.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Console/Kernel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Events/Event.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Exceptions/Handler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/Admin/ArticleCategoriesController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/Admin/ArticleController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/Admin/DashboardController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/Admin/LanguageController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/Admin/PhotoAlbumController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/Admin/PhotoController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/Admin/UserController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/AdminController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/ArticlesController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/Auth/AuthController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/Auth/PasswordController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/HomeController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/PagesController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Controllers/PhotoController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Kernel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Middleware/Admin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Middleware/Authenticate.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Middleware/EncryptCookies.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Middleware/VerifyCsrfToken.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Requests/Admin/ArticleCategoryRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Requests/Admin/ArticleRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Requests/Admin/LanguageRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Requests/Admin/PhotoAlbumRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Requests/Admin/PhotoRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Requests/Admin/UserRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/Requests/Request.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Http/routes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Jobs/Job.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Language.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Listeners/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Photo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/PhotoAlbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Providers/AppServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Providers/AuthServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Providers/EventServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/Providers/RouteServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/app/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/artisan" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/bootstrap/app.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/bootstrap/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/bootstrap/cache/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/app.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/broadcasting.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/cache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/compile.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/datatables.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/debugbar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/filesystems.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/mail.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/queue.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/services.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/session.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/sluggable.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/config/view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/factories/ModelFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/migrations/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/migrations/2014_10_18_195027_create_languages_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/migrations/2014_10_18_225005_create_article_categories_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/migrations/2014_10_18_225505_create_articles_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/migrations/2014_10_18_225928_create_photo_albums_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/migrations/2014_10_18_231619_create_photos_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/seeds/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/seeds/ArticleCategoriesTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/seeds/ArticleTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/seeds/DatabaseSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/seeds/LanguageTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/database/seeds/UserTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/phpspec.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/phpunit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/appfiles/news/no_photo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/appfiles/photoalbum/no_photo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/admin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/flags.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/controls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-icons_888888_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/css/site.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/img/flags.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/js/admin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/js/site.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/public/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/assets/css/sb-admin-2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/assets/js/bootstrap-dataTables-paging.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/assets/js/dataTables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/assets/js/datatables.fnReloadAjax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/assets/js/sb-admin-2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/admin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/language.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/modal.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/news.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/newscategory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/photo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/photoalbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/role.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/users.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/video.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/admin/videoalbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/reminders.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/site/site.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/site/user.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/bs/validation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/admin/admin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/admin/article.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/admin/articlecategory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/admin/language.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/admin/modal.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/admin/photo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/admin/photoalbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/admin/role.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/admin/users.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/passwords.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/reminders.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/site/site.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/site/user.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/en/validation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/admin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/language.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/modal.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/news.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/newscategory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/photo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/photoalbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/role.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/users.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/video.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/admin/videoalbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/passwords.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/reminders.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/site/site.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/site/user.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/pt/validation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/admin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/language.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/modal.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/news.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/newscategory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/photo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/photoalbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/role.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/users.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/video.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/admin/videoalbum.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/reminders.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/site/site.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/site/user.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/lang/sr/validation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/article/create_edit.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/article/delete.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/article/index.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/articlecategory/create_edit.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/articlecategory/delete.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/articlecategory/index.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/dashboard/index.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/language/create_edit.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/language/delete.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/language/index.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/layouts/default.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/layouts/modal.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/partials/nav.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/photo/create_edit.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/photo/delete.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/photo/index.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/photoalbum/create_edit.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/photoalbum/delete.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/photoalbum/index.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/user/create_edit.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/user/delete.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/admin/user/index.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/article/index.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/article/view.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/auth/changepassword.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/auth/login.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/auth/password.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/auth/register.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/auth/reset.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/emails/auth/password.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/emails/password.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/errors/503.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/errors/list.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/layouts/app.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/notifications.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/pages/about.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/pages/contact.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/pages/home.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/partials/banner.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/partials/footer.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/partials/nav.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/partials/notifications.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/resources/views/photo/view_album.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/server.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/storage/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/storage/framework/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/storage/framework/cache/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/storage/framework/sessions/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/storage/framework/views/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/storage/logs/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/tests/ExampleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/Laravel-5-Bootstrap-3-Starter-Site-master/tests/TestCase.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Objects/ObjectSendMail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Jobs/SendMail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/lang/en/front/verify.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/lang/vi/front/verify.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/emails/auth/password.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/emails/auth/verify.blade.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Response/ContactsResponse.php" afterPath="$PROJECT_DIR$/app/Http/Responses/ContactsResponse.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Response/ProjectInfoResponse.php" afterPath="$PROJECT_DIR$/app/Http/Responses/ProjectInfoResponse.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Response/Response.php" afterPath="$PROJECT_DIR$/app/Http/Responses/Response.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/team/1.jpg" afterPath="$PROJECT_DIR$/public/img/team/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/team/2.jpg" afterPath="$PROJECT_DIR$/public/img/team/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/team/3.jpg" afterPath="$PROJECT_DIR$/public/img/team/3.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/link.txt" afterPath="$PROJECT_DIR$/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/ContactsRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/ContactsRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mail.php" afterPath="$PROJECT_DIR$/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bootstrap-notify.js" afterPath="$PROJECT_DIR$/public/js/bootstrap-notify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/common.js" afterPath="$PROJECT_DIR$/public/js/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/templates/front/template.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/front/template.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/Gruntfile.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/LICENSE" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/README.md" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/bootstrap.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/creative.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/creative.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/creative.min.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/creative.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/magnific-popup.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/css/magnific-popup.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/animated.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/animated.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/bordered-pulled.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/core.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/fixed-width.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/font-awesome.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/icons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/larger.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/list.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/path.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/rotated-flipped.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/stacked.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_animated.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_animated.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_core.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_fixed-width.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_larger.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_path.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_stacked.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/font-awesome/scss/font-awesome.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/index.html" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/bootstrap.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/creative.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/creative.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/creative.min.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/creative.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.easing.min.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.easing.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.fittext.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.fittext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.magnific-popup.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.magnific-popup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.magnific-popup.min.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/jquery.magnific-popup.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/scrollreveal.js" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/js/scrollreveal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/creative.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/creative.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/mixins.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/variables.less" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/package.json" afterPath="$PROJECT_DIR$/template/startbootstrap-creative-1.0.4/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/LICENSE" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/README.md" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/bootstrap.css" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/landing-page.css" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/css/landing-page.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/bordered-pulled.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/core.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/fixed-width.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/font-awesome.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/icons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/larger.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/list.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/path.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/rotated-flipped.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/spinning.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/spinning.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/stacked.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_core.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_fixed-width.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_larger.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_path.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_spinning.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_spinning.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_stacked.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/font-awesome/scss/font-awesome.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/index.html" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/bootstrap.js" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/jquery.js" afterPath="$PROJECT_DIR$/template/startbootstrap-landing-page-1.0.5/js/jquery.js" />
     </list>
     <ignored path="per_infomation_technology.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -289,59 +145,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="template.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/templates/front/template.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!doc;n#sendContact#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="61" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="61" />
-              <folding>
-                <element signature="e#7#392#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactsRequest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33081284">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.346154">
-              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.65384614">
+              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
               <folding>
                 <element signature="e#6#96#0#PHP" expanded="true" />
                 <element signature="e#131#159#0#PHP" expanded="true" />
+                <marker date="1467574348380" expanded="true" signature="381:1794" placeholder="{...}" />
+                <marker date="1467574348380" expanded="true" signature="697:1792" placeholder="{...}" />
+                <marker date="1467574348380" expanded="true" signature="766:1628" placeholder="..." />
+                <marker date="1467574348380" expanded="true" signature="928:1478" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendMail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Jobs/SendMail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6545455">
+              <caret line="42" column="30" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="30" />
+              <folding>
+                <element signature="e#28#45#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mailer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Mail/Mailer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.2909093">
+              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectSendMail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Objects/ObjectSendMail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.1090908">
+              <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -351,8 +199,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -412,11 +260,7 @@
         <option value="$PROJECT_DIR$/resources/views/templates/front/page.blade.php" />
         <option value="$PROJECT_DIR$/public/css/social-buttons.css" />
         <option value="$PROJECT_DIR$/public/css/agency.css" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" />
-        <option value="$PROJECT_DIR$/public/js/common.js" />
-        <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/app/Repositories/ContactRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/ContactsRepository.php" />
         <option value="$PROJECT_DIR$/app/Models/Contacts.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Request.php" />
@@ -424,10 +268,23 @@
         <option value="$PROJECT_DIR$/database/seeds/ProjectInfoTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_30_091555_create_contacts_table.php" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-        <option value="$PROJECT_DIR$/resources/views/templates/front/template.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/main.js" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php" />
+        <option value="$PROJECT_DIR$/public/js/common.js" />
+        <option value="$PROJECT_DIR$/public/js/main.js" />
+        <option value="$PROJECT_DIR$/public/js/bootstrap-notify.js" />
+        <option value="$PROJECT_DIR$/public/css/common.css" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/resources/views/templates/front/template.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Responses/ContactsResponse.php" />
+        <option value="$PROJECT_DIR$/app/Http/Responses/ProjectInfoResponse.php" />
+        <option value="$PROJECT_DIR$/app/Http/Responses/Response.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/ContactsRepository.php" />
+        <option value="$PROJECT_DIR$/resources/views/emails/auth/verify.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" />
+        <option value="$PROJECT_DIR$/config/mail.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/SendMail.php" />
+        <option value="$PROJECT_DIR$/app/Http/Objects/ObjectSendMail.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -540,7 +397,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -569,7 +426,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -583,7 +444,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -597,11 +470,81 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="en" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="en" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="per_infomation_technology" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -616,24 +559,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per_infomation_technology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per_infomation_technology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -652,50 +577,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per_infomation_technology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per_infomation_technology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Response" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per_infomation_technology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="per_infomation_technology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Requests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -723,7 +604,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -751,16 +632,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel5_site_master" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\per_infomation_technology\resources\lang\vi" />
+      <recent name="C:\xampp\htdocs\per_infomation_technology\resources\views" />
+      <recent name="C:\xampp\htdocs\per_infomation_technology\resources\lang\en" />
+      <recent name="C:\xampp\htdocs\per_infomation_technology\app\Jobs" />
+      <recent name="C:\xampp\htdocs\per_infomation_technology\app\Http\Requests" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\per_infomation_technology\resources\lang\en\front" />
       <recent name="C:\xampp\htdocs\per_infomation_technology\resources\views\front" />
       <recent name="C:\xampp\htdocs\per_infomation_technology\app" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\per_infomation_technology\app\Http\Requests" />
-      <recent name="C:\xampp\htdocs\per_infomation_technology\app\Models" />
-      <recent name="C:\xampp\htdocs\per_infomation_technology\app\Repositories" />
-      <recent name="C:\xampp\htdocs\per_infomation_technology\public\js" />
-      <recent name="C:\xampp\htdocs\per_infomation_technology\public\img" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.localhost">
@@ -795,7 +677,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="localhost" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/per_infomation_technology/public">
+    <configuration default="false" name="localhost" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="c3785e3e-7f51-4bb7-90d5-f662cdd43101" server_name="localhost" start_url="/per_infomation_technology/public">
       <method />
     </configuration>
     <list size="1">
@@ -825,30 +707,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20272315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5121029" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.48487142" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.48487142" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2118003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.48789713" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.396072" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3764321" sideWeight="0.48184568" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.48789713" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
@@ -892,115 +774,17 @@
           <url>file://$PROJECT_DIR$/database/seeds/ProjectInfoTableSeeder.php</url>
           <line>13</line>
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
-          <line>31</line>
-          <option name="timeStamp" value="7" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/js/bootstrap-notify.js</url>
+          <line>26</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.55376345">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2544802">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20788531">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Response/ProjectInfoResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2437276">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/front/page.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6727272">
-          <caret line="78" column="42" selection-start-line="78" selection-start-column="42" selection-end-line="79" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/scrollreveal.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/scrollreveal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.464752">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery.fittext.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.24281985">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44386423">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/social-buttons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3809524">
-          <caret line="688" column="20" selection-start-line="688" selection-start-column="20" selection-end-line="688" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/agency.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2549801">
-          <caret line="619" column="76" selection-start-line="619" selection-start-column="76" selection-end-line="619" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2437276">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/notifications/alert_bangtidy.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1008,38 +792,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17465754">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9390681">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/bootstrap-notify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4469178">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.3535032">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Response/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32484075">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1128,13 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Response/ContactsResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3598726">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.84713376">
@@ -1170,52 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68471336">
-          <caret line="1087" column="0" selection-start-line="1087" selection-start-column="0" selection-end-line="1087" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1433121">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/front/template.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc;n#sendContact#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6012862">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/ContactsRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29617834">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/Request.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12878788">
@@ -1237,16 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="61" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="61" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32484075">
@@ -1254,22 +947,280 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.346154">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        <state vertical-scroll-proportion="1.1432585">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23876405">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="61" />
           <folding>
-            <element signature="e#6#96#0#PHP" expanded="true" />
-            <element signature="e#131#159#0#PHP" expanded="true" />
+            <element signature="e#7#392#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ContactsRequest.php">
+    <entry file="file://$PROJECT_DIR$/public/js/bootstrap-notify.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33081284">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.28611898">
+          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37921348">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71629214">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13597734">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64659685">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc;n#sendContact#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/front/template.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26911315">
+          <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+          <folding>
+            <marker date="1467570814290" expanded="true" signature="3595:3704" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="14161:14173" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="14947:20376" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="14983:20357" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="15017:15298" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="15073:15275" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="15332:20338" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="15376:20315" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="15422:20288" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="15455:16530" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="15516:15660" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="15721:16496" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="15788:15980" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="16044:16457" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="16107:16414" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="16589:17661" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="16650:16794" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="16855:17627" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="16922:17111" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="17175:17588" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="17238:17545" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="17694:18778" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="17755:17899" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="17960:18744" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="18027:18228" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="18292:18705" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="18355:18662" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="18837:19910" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="18898:19042" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="19103:19876" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="19170:19360" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="19424:19837" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="19487:19794" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="19969:20258" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="20030:20224" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="20071:20185" placeholder="..." />
+            <marker date="1467570814290" expanded="true" signature="27596:27698" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Responses/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14325842">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Responses/ProjectInfoResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14325842">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Responses/ContactsResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14325842">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SendmailTransport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1488764">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09550562">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/AliasLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3076925">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3076925">
+          <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45396826">
+          <caret line="1081" column="45" selection-start-line="1081" selection-start-column="45" selection-end-line="1081" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21587302">
+          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60117304">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/auth/verify.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53968257">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/ContactsRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48253968">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#35#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.6920633">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/front/verify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5936508">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/vi/front/verify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2972028">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Objects/ObjectSendMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1090908">
+          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Mail/Mailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2909093">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/SendMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6545455">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="30" />
+          <folding>
+            <element signature="e#28#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65384614">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <element signature="e#6#96#0#PHP" expanded="true" />
+            <element signature="e#131#159#0#PHP" expanded="true" />
+            <marker date="1467574348380" expanded="true" signature="381:1794" placeholder="{...}" />
+            <marker date="1467574348380" expanded="true" signature="697:1792" placeholder="{...}" />
+            <marker date="1467574348380" expanded="true" signature="766:1628" placeholder="..." />
+            <marker date="1467574348380" expanded="true" signature="928:1478" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
