@@ -30,11 +30,6 @@ function sendContact() {
         },
         error: function (data) {
             $('.loadingPanel').toggle();
-            //var response =  jQuery.parseJSON(data.responseText);
-            //var errors='';
-            //$.each( errors , function( key, value ) {
-            //    errors +=  value[0] + '\n'; //showing only the first error.
-            //});
             var errors = '';
             for(datos in data.responseJSON){
                 errors += data.responseJSON[datos] + '<br/>';

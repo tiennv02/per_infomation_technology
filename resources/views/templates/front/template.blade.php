@@ -9,7 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
-    <title>Information system development</title>
+    <title>VietStar</title>
+    <link rel="shortcut icon" href="img/admin/admin.png">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -19,13 +20,13 @@
           rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
           rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css" type="text/css">
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/agency.css" type="text/css">
-    <link rel="stylesheet" href="css/social-buttons.css" type="text/css">
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!--social css-->
+    <link rel="stylesheet" href="css/social-buttons.css" type="text/css">
     <link rel="stylesheet" href="css/common.css" type="text/css">
 
     <!--notifications_start-->
@@ -33,16 +34,6 @@
     <link rel="stylesheet" href="css/notifications/alert_bangtidy.css" type="text/css">
     <link rel="stylesheet" href="css/notifications/alert_blackgloss.css" type="text/css">
     <!--notifications_end-->
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -243,108 +234,11 @@
                                  class="img-responsive img-centered img-team-area-120p" alt="">
                         </div>
                     </div>
-                    {{--<div class="row">--}}
-                    {{--<div class="col-md-2 col-sm-6">--}}
-                    {{--<a href="#">--}}
-                    {{--<img src="img/logos/logovs.png"  style="height: 60px"--}}
-                    {{--class="img-responsive img-centered img-team-area-120p" alt="">--}}
-                    {{--</a>--}}
-                    {{--</div>--}}
-                    {{--</div>--}}
                 </div>
             </aside>
         </div>
     </div>
 </section>
-
-{{--<section id="about">--}}
-{{--<div class="container">--}}
-{{--<div class="row">--}}
-{{--<div class="col-lg-12 text-center">--}}
-{{--<h2 class="section-heading">About</h2>--}}
-
-{{--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>--}}
-{{--</div>--}}
-{{--</div>--}}
-{{--<div class="row">--}}
-{{--<div class="col-lg-12">--}}
-{{--<ul class="timeline">--}}
-{{--<li>--}}
-{{--<div class="timeline-image">--}}
-{{--<img class="img-circle img-responsive" src="img/about/1.jpg" alt="">--}}
-{{--</div>--}}
-{{--<div class="timeline-panel">--}}
-{{--<div class="timeline-heading">--}}
-{{--<h4>2009-2011</h4>--}}
-{{--<h4 class="subheading">Our Humble Beginnings</h4>--}}
-{{--</div>--}}
-{{--<div class="timeline-body">--}}
-{{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
-{{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
-{{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
-{{--</div>--}}
-{{--</div>--}}
-{{--</li>--}}
-{{--<li class="timeline-inverted">--}}
-{{--<div class="timeline-image">--}}
-{{--<img class="img-circle img-responsive" src="img/about/2.jpg" alt="">--}}
-{{--</div>--}}
-{{--<div class="timeline-panel">--}}
-{{--<div class="timeline-heading">--}}
-{{--<h4>March 2011</h4>--}}
-{{--<h4 class="subheading">An Agency is Born</h4>--}}
-{{--</div>--}}
-{{--<div class="timeline-body">--}}
-{{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
-{{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
-{{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
-{{--</div>--}}
-{{--</div>--}}
-{{--</li>--}}
-{{--<li>--}}
-{{--<div class="timeline-image">--}}
-{{--<img class="img-circle img-responsive" src="img/about/3.jpg" alt="">--}}
-{{--</div>--}}
-{{--<div class="timeline-panel">--}}
-{{--<div class="timeline-heading">--}}
-{{--<h4>December 2012</h4>--}}
-{{--<h4 class="subheading">Transition to Full Service</h4>--}}
-{{--</div>--}}
-{{--<div class="timeline-body">--}}
-{{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
-{{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
-{{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
-{{--</div>--}}
-{{--</div>--}}
-{{--</li>--}}
-{{--<li class="timeline-inverted">--}}
-{{--<div class="timeline-image">--}}
-{{--<img class="img-circle img-responsive" src="img/about/4.jpg" alt="">--}}
-{{--</div>--}}
-{{--<div class="timeline-panel">--}}
-{{--<div class="timeline-heading">--}}
-{{--<h4>July 2014</h4>--}}
-{{--<h4 class="subheading">Phase Two Expansion</h4>--}}
-{{--</div>--}}
-{{--<div class="timeline-body">--}}
-{{--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut--}}
-{{--voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit--}}
-{{--vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>--}}
-{{--</div>--}}
-{{--</div>--}}
-{{--</li>--}}
-{{--<li class="timeline-inverted">--}}
-{{--<div class="timeline-image">--}}
-{{--<h4>Be Part--}}
-{{--<br>Of Our--}}
-{{--<br>Story!</h4>--}}
-{{--</div>--}}
-{{--</li>--}}
-{{--</ul>--}}
-{{--</div>--}}
-{{--</div>--}}
-{{--</div>--}}
-{{--</section>--}}
 
 <section id="team" class="bg-light-gray">
     <div class="container">
@@ -548,7 +442,7 @@
     </div>
 </div>
 @endforeach
-        <!--notifications_start-->
+<!--notifications_start-->
 <div class='notifications bottom-right'></div>
 <!--notifications_end-->
 <!--loading panel_start-->
@@ -572,7 +466,7 @@
 <script src="js/scrollreveal.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/jquery.fittext.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
+{{--<script src="js/jquery.magnific-popup.min.js"></script>--}}
 
 <!--notifications_start-->
 <script src="js/bootstrap-notify.js"></script>

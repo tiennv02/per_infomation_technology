@@ -10,10 +10,20 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+/*
+ * Website pages
+ */
 Route::get('/', 'HomeController@index');
 
 Route::post('contacts/create', 'HomeController@contactsCreate');
 
+/*
+ * Admin pages
+ */
+Route::get('/admin', 'Admin\AdminController@index');
+/*
+ * Checkout connect Databases
+ */
 Route::get('/checkDB', function () {
     dd(DB::connection()->getDatabaseName());
 });
