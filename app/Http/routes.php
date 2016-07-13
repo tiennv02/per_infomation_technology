@@ -21,6 +21,10 @@ Route::post('contacts/create', 'HomeController@contactsCreate');
  * Admin pages
  */
 Route::get('/admin', 'Admin\AdminController@index');
+Route::get('/admin/moduls/contacts', 'Admin\Moduls\Contacts\ContactsManagementController@index');
+Route::get('admin/moduls/contacts/get/{id}', 'Admin\Moduls\Contacts\ContactsManagementController@get');
+Route::put('admin/moduls/contacts/update/{id?}', 'Admin\Moduls\Contacts\ContactsManagementController@update');
+Route::delete('contacts/delete/{id?}', 'Admin\Moduls\Contacts\ContactsManagementController@delete');
 /*
  * Checkout connect Databases
  */

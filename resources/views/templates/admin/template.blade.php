@@ -1,371 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Admin STAR</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
-    <link rel="shortcut icon" href="img/admin/admin.png">
-
-    <title>VietStar Admin</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- bootstrap theme -->
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <!-- font icon -->
-    <link href="css/admin/elegant-icons-style.css" rel="stylesheet"/>
-    <link href="css/admin/font-awesome.min.css" rel="stylesheet"/>
-    <!-- full calendar css-->
-    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet"/>
-    <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet"/>
-    <!-- easy pie chart-->
-    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css"
-          media="screen"/>
-    <!-- Custom styles -->
-    <link href="css/admin/widgets.css" rel="stylesheet">
-    <link href="css/admin/style.css" rel="stylesheet">
-    <link href="css/admin/style-responsive.css" rel="stylesheet"/>
-    <link href="css/common.css" rel="stylesheet"/>
+    {{--============================ STYLESHEET ==============================--}}
+            <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="{!! asset('css/bootstrap/bootstrap.min.css') !!}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{!! asset('css/font-awesome/font-awesome.min.css') !!}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="{!! asset('css/ionicons/ionicons.min.css') !!}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{!! asset('css/admin/AdminLTE.min.css') !!}">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="{!! asset('css/skins/_all-skins.min.css') !!}">
+    <!--notifications_start-->
+    <link rel="stylesheet" href="{!! asset('css/bootstrap/bootstrap-notify.css') !!}">
+    <link rel="stylesheet" href="{!! asset('css/notifications/alert_bangtidy.css') !!}">
+    <link rel="stylesheet" href="{!! asset('css/notifications/alert_blackgloss.css') !!}">
+    <!--notifications_end-->
+    <link rel="stylesheet" href="{!! asset('css/common.css') !!}">
+    {{--============================ JAVASCRIPT ==============================--}}
+            <!-- jQuery 2.2.3 -->
+    <script src="{!! asset('plugins/jQuery/jquery-2.2.3.min.js') !!}" type="text/javascript"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="{!! asset('https://code.jquery.com/ui/1.11.4/jquery-ui.min.js') !!}" type="text/javascript"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="{!! asset('js/bootstrap/bootstrap.min.js') !!}" type="text/javascript"></script>
+    <!-- Sparkline -->
+    <script src="{!! asset('plugins/sparkline/jquery.sparkline.min.js') !!}" type="text/javascript"></script>
+    <!-- AdminLTE App -->
+    <!--notifications_start-->
+    <script src="{!! asset('js/bootstrap/bootstrap-notify.js') !!}" type="text/javascript"></script>
+    <!--notifications_end-->
+    <script src="{!! asset('js/app/app.min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/common.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/main.js') !!}" type="text/javascript"></script>
 </head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper" style="background-color: #ecf0f5;">
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="{!! url('/admin') !!}" class="logo">
+            <span class="logo-mini"><b>Star</b></span>
+            <span class="logo-lg"><b>Admin</b> STAR</span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
 
-<body>
-<!-- container section start -->
-<section id="container" class="">
-    <header class="header dark-bg">
-        <div class="toggle-nav">
-            <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i
-                        class="icon_menu"></i></div>
-        </div>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown messages-menu">
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">4</span>
+                        </a>--}}
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img src={!! asset('img/user4-128x128.jpg') !!} class="img-circle"
+                                                     alt="User Image">
+                                            </div>
+                                            <h4>
+                                                Reviewers
+                                                <small><i class="fa fa-clock-o"></i> 2 days</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">See All Messages</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown notifications-menu">
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                        {{--<i class="fa fa-bell-o"></i>--}}
+                        {{--<span class="label label-warning">10</span>--}}
+                        {{--</a>--}}
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">View all</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown tasks-menu">
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                        {{--<i class="fa fa-flag-o"></i>--}}
+                        {{--<span class="label label-danger">9</span>--}}
+                        {{--</a>--}}
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 9 tasks</li>
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <h3>
+                                                Create a nice theme
+                                                <small class="pull-right">40%</small>
+                                            </h3>
+                                            <div class="progress xs">
+                                                <div class="progress-bar progress-bar-green" style="width: 40%"
+                                                     role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                     aria-valuemax="100">
+                                                    <span class="sr-only">40% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="#">View all tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src={!! asset('img/user2-160x160.jpg') !!} alt="UserImage" class="user-image">
+                            <span class="hidden-xs">Nguyễn Văn Tiến</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src={!! asset('img/user2-160x160.jpg') !!} class="img-circle" alt="User Image">
 
-        <!--logo start-->
-        <a href="index.html" class="logo">VietStar <span class="lite">Admin</span></a>
-        <!--logo end-->
-
-        <div class="top-nav notification-row">
-            <!-- notificatoin dropdown start-->
-            <ul class="nav pull-right top-menu">
-
-                <!-- task notificatoin start -->
-                <li id="task_notificatoin_bar" class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="icon-task-l"></i>
-                                <span class="badge bg-important">6</span>
-                    </a>
-                    <ul class="dropdown-menu extended tasks-bar opacity-1">
-                        <div class="notify-arrow notify-arrow-blue"></div>
-                        <li>
-                            <p class="blue">You have 6 pending letter</p>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="task-info">
-                                    <div class="desc">Design PSD</div>
-                                    <div class="percent">90%</div>
-                                </div>
-                                <div class="progress progress-striped">
-                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                        <span class="sr-only">90% Complete (success)</span>
+                                <p>
+                                    Star Admin
+                                    <small>Member since Nov. 2012</small>
+                                </p>
+                            </li>
+                            <li class="user-body">
+                                <div class="row">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Followers</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Sales</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Friends</a>
                                     </div>
                                 </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="task-info">
-                                    <div class="desc">
-                                        Project 1
-                                    </div>
-                                    <div class="percent">30%</div>
+                            </li>
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
-                                <div class="progress progress-striped">
-                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="30"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                                        <span class="sr-only">30% Complete (warning)</span>
-                                    </div>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
                                 </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="task-info">
-                                    <div class="desc">Digital Marketing</div>
-                                    <div class="percent">80%</div>
-                                </div>
-                                <div class="progress progress-striped">
-                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                        <span class="sr-only">80% Complete</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="task-info">
-                                    <div class="desc">Logo Designing</div>
-                                    <div class="percent">78%</div>
-                                </div>
-                                <div class="progress progress-striped">
-                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="78"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 78%">
-                                        <span class="sr-only">78% Complete (danger)</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="task-info">
-                                    <div class="desc">Mobile App</div>
-                                    <div class="percent">50%</div>
-                                </div>
-                                <div class="progress progress-striped active">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 50%">
-                                        <span class="sr-only">50% Complete</span>
-                                    </div>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="external">
-                            <a href="#">See All Tasks</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- task notificatoin end -->
-                <!-- inbox notificatoin start-->
-                <li id="mail_notificatoin_bar" class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="icon-envelope-l"></i>
-                        <span class="badge bg-important">5</span>
-                    </a>
-                    <ul class="dropdown-menu extended inbox opacity-1">
-                        <div class="notify-arrow notify-arrow-blue"></div>
-                        <li>
-                            <p class="blue">You have 5 new messages</p>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/admin/avatar-mini.jpg"></span>
-                                    <span class="subject">
-                                    <span class="from">Greg  Martin</span>
-                                    <span class="time">1 min</span>
-                                    </span>
-                                    <span class="message">
-                                        I really like this admin panel.
-                                    </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">See all messages</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- inbox notificatoin end -->
-                <!-- alert notification start-->
-                <li id="alert_notificatoin_bar" class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-
-                        <i class="icon-bell-l"></i>
-                        <span class="badge bg-important">7</span>
-                    </a>
-                    <ul class="dropdown-menu extended notification opacity-1">
-                        <div class="notify-arrow notify-arrow-blue"></div>
-                        <li>
-                            <p class="blue">You have 4 new notifications</p>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="label label-primary"><i class="icon_profile"></i></span>
-                                Friend Request
-                                <span class="small italic pull-right">5 mins</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="label label-warning"><i class="icon_pin"></i></span>
-                                John location.
-                                <span class="small italic pull-right">50 mins</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="label label-danger"><i class="icon_book_alt"></i></span>
-                                Project 3 Completed.
-                                <span class="small italic pull-right">1 hr</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="label label-success"><i class="icon_like"></i></span>
-                                Mick appreciated your work.
-                                <span class="small italic pull-right"> Today</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">See all notifications</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- alert notification end-->
-                <!-- user login dropdown start-->
-                <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="profile-ava">
-                                <img alt="" src="img/admin/avatar1_small.jpg">
-                            </span>
-                        <span class="username">Jenifer Smith</span>
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu extended logout opacity-1">
-                        <div class="log-arrow-up"></div>
-                        <li class="eborder-top">
-                            <a href="#"><i class="icon_profile"></i> My Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon_clock_alt"></i> Timeline</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon_chat_alt"></i> Chats</a>
-                        </li>
-                        <li>
-                            <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
-                        </li>
-                        <li>
-                            <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
-                        </li>
-                        <li>
-                            <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- user login dropdown end -->
-            </ul>
-            <!-- notificatoin dropdown end-->
-        </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <!--header end-->
-
-    <!--sidebar start-->
-    <aside>
-        <div id="sidebar" class="nav-collapse ">
-            <!-- sidebar menu start-->
-            <ul class="sidebar-menu">
-                <li class="active">
-                    <a class="" href="index.html">
-                        <i class="icon_house_alt"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_document_alt"></i>
-                        <span>Forms</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="form_component.html">Form Elements</a></li>
-                        <li><a class="" href="form_validation.html">Form Validation</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_desktop"></i>
-                        <span>UI Fitures</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="general.html">Elements</a></li>
-                        <li><a class="" href="buttons.html">Buttons</a></li>
-                        <li><a class="" href="grids.html">Grids</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="" href="widgets.html">
-                        <i class="icon_genius"></i>
-                        <span>Widgets</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="chart-chartjs.html">
-                        <i class="icon_piechart"></i>
-                        <span>Charts</span>
-
-                    </a>
-
-                </li>
-
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Tables</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="basic_table.html">Basic Table</a></li>
-                    </ul>
-                </li>
-
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_documents_alt"></i>
-                        <span>Pages</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="profile.html">Profile</a></li>
-                        <li><a class="" href="login.html"><span>Login Page</span></a></li>
-                        <li><a class="" href="blank.html">Blank Page</a></li>
-                        <li><a class="" href="404.html">404 Error</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-            <!-- sidebar menu end-->
-        </div>
-    </aside>
-    <!--sidebar end-->
-
-    <!--main content start-->
-    <section id="main-content">
-        <section class="wrapper">
-            <!--overview start-->
-            <div class="row">
-                <div class="col-lg-12">
-                    <ol class="breadcrumb">
-                        <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-                        <li><i class="fa fa-laptop"></i>Dashboard</li>
-                    </ol>
+    <aside class="main-sidebar" style="background-color: #ecf0f5;">
+        <section class="sidebar" style="background-color: #222d32;border-bottom-right-radius: 15px">
+            <!-- Sidebar user panel -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="{!! asset('img/user2-160x160.jpg') !!}" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <p>Nguyễn Văn Tiến</p>
+                    {{--<a href="#"><i class="fa fa-circle text-success"></i> Online</a>--}}
                 </div>
             </div>
-
-            <div class="row">
-                project team & activity end
-            </div>
-            <!--row-->
-            <!-- project team & activity end -->
+            <ul class="sidebar-menu">
+                <li class="header" style="color:white; background: #222d32">Menu</li>
+                <li>
+                    <a href="{!! url('/admin') !!}">
+                        <i class="fa fa-th"></i> <span>Widgets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{!! url('/admin/moduls/contacts') !!}">
+                        <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                    </a>
+                </li>
+                <li><a href="{!! url('/admin/moduls/projectInfo') !!}"><i class="fa fa-book"></i>
+                        <span>Documentation</span></a></li>
+            </ul>
         </section>
+    </aside>
+    <div class="content-wrapper">
+        @yield('moduls')
+    </div>
     </section>
-    <!--main content end-->
-</section>
-<!-- container section start -->
-
-<!-- javascripts -->
-<script src="js/jquery.js"></script>
-<!-- bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- nice scroll -->
-<script src="js/admin/jquery.scrollTo.min.js"></script>
-<script src="js/admin/jquery.nicescroll.js" type="text/javascript"></script>
-<!-- scripts.nicescroll -->
-<script src="js/admin/scripts.nicescroll.js"></script>
+</div>
+<!--notifications_start-->
+<div class='notifications bottom-right'></div>
+<!--notifications_end-->
+<!--loading panel_start-->
+<div class='loadingPanel' style="display: none">
+    <div class="loadingPanel-div">
+        <img width="32" height="32"
+             alt="Loading"
+             src="{!! asset('img/ajax-loader.gif') !!}"/>
+        Loading ..
+    </div>
+</div>
+<!--loading panel_end-->
 </body>
 </html>

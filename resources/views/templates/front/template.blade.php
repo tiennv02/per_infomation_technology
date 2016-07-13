@@ -12,29 +12,42 @@
     <title>VietStar</title>
     <link rel="shortcut icon" href="img/admin/admin.png">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
+    <!-- Bootstrap Core, social CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/agency.css" type="text/css">
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/social-buttons.css" type="text/css">
+    <!--notifications_start-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-notify.css" type="text/css">
+    <link rel="stylesheet" href="css/notifications/alert_bangtidy.css" type="text/css">
+    <link rel="stylesheet" href="css/notifications/alert_blackgloss.css" type="text/css">
+    <!--notifications_end-->
+    <!-- Custom Fonts Start-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
           rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
           rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css" type="text/css">
-
-    <link rel="stylesheet" href="css/agency.css" type="text/css">
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <!--social css-->
-    <link rel="stylesheet" href="css/social-buttons.css" type="text/css">
+    <!-- Custom Fonts End-->
+    <!--custom css-->
     <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- jQuery -->
+    <script src="js/jquery/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery/scrollreveal.min.js"></script>
+    <script src="js/jquery/jquery.easing.min.js"></script>
+    <script src="js/jquery/jquery.fittext.js"></script>
     <!--notifications_start-->
-    <link rel="stylesheet" href="css/bootstrap_notify.css" type="text/css">
-    <link rel="stylesheet" href="css/notifications/alert_bangtidy.css" type="text/css">
-    <link rel="stylesheet" href="css/notifications/alert_blackgloss.css" type="text/css">
+    <script src="js/bootstrap/bootstrap-notify.js"></script>
     <!--notifications_end-->
-
+    <!-- Custom Theme JavaScript -->
+    <script src="js/jquery/creative.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
 </head>
 
 <body id="page-top">
@@ -455,28 +468,6 @@
     </div>
 </div>
 <!--loading panel_end-->
-
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="js/scrollreveal.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.fittext.js"></script>
-{{--<script src="js/jquery.magnific-popup.min.js"></script>--}}
-
-<!--notifications_start-->
-<script src="js/bootstrap-notify.js"></script>
-<!--notifications_end-->
-
-<!-- Custom Theme JavaScript -->
-<script src="js/creative.js"></script>
-<script src="js/main.js"></script>
-<script src="js/common.js"></script>
-
 </body>
 
 </html>

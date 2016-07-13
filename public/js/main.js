@@ -31,12 +31,19 @@ function sendContact() {
         error: function (data) {
             $('.loadingPanel').toggle();
             var errors = '';
-            for(datos in data.responseJSON){
+            for (datos in data.responseJSON) {
                 errors += data.responseJSON[datos] + '<br/>';
             }
             Common_showErrors(data.status, errors);
         }
     });
+}
+
+function notifications(type, text) {
+    $('.notifications').notify({
+        type: type,
+        message: {text: text}
+    }).show();
 }
 
 $(document).ready(function () {

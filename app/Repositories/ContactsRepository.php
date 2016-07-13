@@ -1,7 +1,9 @@
 <?php namespace App\Repositories;
 
-use App\Models\Contacts;
 use App\Http\Responses\Response;
+use App\Http\Responses\ContactsResponse;
+use App\Models\Contacts;
+use App\Http\Util\CustomPresenter;
 
 class ContactsRepository extends BaseRepository
 {
@@ -31,6 +33,17 @@ class ContactsRepository extends BaseRepository
     }
 
     /**
+     * Get Contacts collection.
+     *
+     * @return Illuminate\Support\Collection
+     */
+    public function getLstContacts()
+    {
+        $data = $this->model->paginate(10);
+        return $data;
+    }
+
+    /**
      * Store a contacts.
      *
      * @param  array $inputs
@@ -51,5 +64,24 @@ class ContactsRepository extends BaseRepository
             $data->setResultMessage($e);
         }
         return $data;
+    }
+
+    public function update($inputs, $id)
+    {
+        $data = new ContactsResponse();
+        try {
+            $customer = $this->getById($id);
+            $customer->type = $inputs['contactsType'];
+            $customer->save();
+        } catch (Exception $e) {
+            $data->setResultCode('ERROR');
+            $data->setResultMessage($e);
+        }
+        return $data;
+    }
+
+    public function getContactsById($id)
+    {
+        return $this->getById($id);
     }
 }
