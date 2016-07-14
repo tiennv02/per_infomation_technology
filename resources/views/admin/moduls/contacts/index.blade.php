@@ -24,40 +24,38 @@
                 </div>
             </div>
             <div class="box-body" style="display: block;">
-                <table class="table border-none">
+                <table class="table border-none" id="tblSearch">
                     <tr>
                         <td class="padding-top-10p">
                             <label class="control-label">Họ tên</label>
                         </td>
-                        <td><input id="name" class="form-control" type="text">
+                        <td><input name="searchName" class="form-control" type="text">
                         </td>
                         <td class="padding-top-10p">
                             <label class="control-label">Email</label>
                         </td>
-                        <td><input id="email" class="form-control" type="email">
+                        <td><input name="searchEmail" class="form-control" type="email">
                         </td>
                     </tr>
                     <tr>
                         <td class="padding-top-10p">
                             <label class="control-label">SĐT</label>
                         </td>
-                        <td><input id="phone" class="form-control" type="text">
+                        <td><input name="searchPhone" class="form-control" type="text">
                         </td>
                         <td class="padding-top-10p">
                             <label class="control-label">Loại</label>
                         </td>
                         <td>
-                            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;"
-                                    tabindex="-1" aria-hidden="true">
-                                <option selected="selected" value=""></option>
-                                <option value="1">Chưa xử lý</option>
+                            <select name="searchType" class="form-control select2 select2-hidden-accessible" style="width: 100%;">
+                                <option value="1" selected="selected">Chưa xử lý</option>
                                 <option value="2">Đã xử lý</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td class="padding-top-10p" colspan="4">
-                            <button class="btn btn-default float-right" type="button">Tìm kiếm</button>
+                            <button class="btn btn-default float-right" type="button" name="btnSearch">Tìm kiếm</button>
                         </td>
                     </tr>
                 </table>
@@ -139,7 +137,7 @@
 
                                             @endif
                                         </td>
-                                        <td class="word-break-all-200p">{{ $iContacts->content }}</td>
+                                        <td class="word-break-all-200p"><div class="text-overflow-hide">{{ $iContacts->content }}</div></td>
                                         <td>{{ $iContacts->created_at }}</td>
                                         <td>{{ $iContacts->updated_at }}</td>
                                     </tr>

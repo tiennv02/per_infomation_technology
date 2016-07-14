@@ -1,9 +1,8 @@
 <?php namespace App\Repositories;
 
-use App\Http\Responses\Response;
 use App\Http\Responses\ContactsResponse;
+use App\Http\Responses\Response;
 use App\Models\Contacts;
-use App\Http\Util\CustomPresenter;
 
 class ContactsRepository extends BaseRepository
 {
@@ -40,9 +39,28 @@ class ContactsRepository extends BaseRepository
     public function getLstContacts()
     {
         $data = $this->model->paginate(10);
-        $data->setPath('');
-
         return $data;
+    }
+
+    public function searchContacts($inputs = null)
+    {
+        if ($inputs && $inputs != null) {
+            $data = $this->model;
+            if (isset($inputs['searchName'])&& $inputs['searchName'] != '') {
+                $data = $data->where('name', 'like', '%' . $inputs['searchName'] . '%');
+            }
+            if (isset($inputs['searchEmail']) && $inputs['searchEmail'] != '') {
+                $data = $data->where('email', 'like', '%' . $inputs['searchEmail'] . '%');
+            }
+            if (isset($inputs['searchPhone']) && $inputs['searchPhone'] != '') {
+                $data = $data->where('phone', 'like', '%' . $inputs['searchPhone'] . '%');
+            }
+            if (isset($inputs['searchType']) && $inputs['searchType'] != '') {
+                $data = $data->where('type', '=',  $inputs['searchType']);
+            }
+            $data = $data->paginate(10);
+            return $data;
+        }
     }
 
     /**

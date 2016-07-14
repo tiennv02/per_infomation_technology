@@ -12,7 +12,7 @@ function getDataContactsById(contactsId) {
                 $("#dialog_addAndEdit").find("[name=contactsName]").val(data.name);
                 $("#dialog_addAndEdit").find("[name=contactsEmail]").val(data.email);
                 $("#dialog_addAndEdit").find("[name=contactsPhone]").val(data.phone);
-                $("#dialog_addAndEdit [name=contactsType] option[value='"+data.type+"']").prop("selected", true);
+                $("#dialog_addAndEdit [name=contactsType] option[value='" + data.type + "']").prop("selected", true);
                 $("#dialog_addAndEdit").find("[name=contactsContent]").val(data.content);
                 $("#dialog_addAndEdit").find("[name=contactsCreateAt]").val(data.created_at);
                 $("#dialog_addAndEdit").find("[name=contactsUpdateAt]").val(data.updated_at);
@@ -21,6 +21,54 @@ function getDataContactsById(contactsId) {
         },
         error: function (data) {
             Common_showErrors('danger', 'Thất bại');
+        }
+    });
+}
+
+function saveContacts() {
+    $('.loadingPanel').toggle();
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    var formData = {
+        contactsType: $("#dialog_addAndEdit").find("[name=contactsType]").val()
+    }
+    var contactsId = $("#dialog_addAndEdit").find("[name=contactsId]").val();
+    var type = "PUT";
+    var url = "contacts/update/" + contactsId;
+    $.ajax({
+        type: type,
+        url: url,
+        data: formData,
+        dataType: 'json',
+        success: function (data) {
+            if (data.resultCode == 'OK') {
+                $('#dialog_addAndEdit').modal('hide');
+                $('.loadingPanel').toggle();
+                Common_notifications('success', 'Thành công');
+                reloadDivContent(data);
+            } else {
+                $('.loadingPanel').toggle();
+                Common_showErrors('danger', data.resultMessage);
+            }
+        },
+        error: function (data) {
+            $('.loadingPanel').toggle();
+            if (data.status === 401)//Unauthorized
+            {
+            } else if (data.status === 422)//422 Unprocessable Entity
+            {
+                var errors = '';
+                for (datos in data.responseJSON) {
+                    errors += data.responseJSON[datos] + '<br/>';
+                }
+                Common_showErrors(data.status, errors);
+            } else {
+                Common_showErrors('danger', 'Thất bại');
+            }
         }
     });
 }
@@ -42,64 +90,6 @@ $(document).ready(function () {
         $('#dialog_addAndEdit').modal('hide');
     });
     $('#dialog_addAndEdit [name=dialog_addAndEdit_save]').click(function (e) {
-        $('.loadingPanel').toggle();
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-
-        var formData = {
-            contactsType: $("#dialog_addAndEdit").find("[name=contactsType]").val()
-        }
-        var contactsId = $("#dialog_addAndEdit").find("[name=contactsId]").val();
-        var type = "PUT";
-        var url = "contacts/update/" + contactsId;
-        $.ajax({
-            type: type,
-            url: url,
-            data: formData,
-            dataType: 'json',
-            success: function (data) {
-                if (data.resultCode == 'OK') {
-                    $('#dialog_addAndEdit').modal('hide');
-                    $('.loadingPanel').toggle();
-                    Common_notifications('success', 'Thành công');
-                    reloadDivContent();
-                } else {
-                    $('.loadingPanel').toggle();
-                    Common_showErrors('danger', data.resultMessage);
-                }
-            },
-            error: function (data) {
-                $('.loadingPanel').toggle();
-                if (data.status === 401)//Unauthorized
-                {
-                } else if (data.status === 422)//422 Unprocessable Entity
-                {
-                    //var errors = data.responseJSON;
-                    //if (errors && errors != null) {
-                    //    $('#dialog_addAndEdit [name=div-errors]').show();
-                    //    var lstErrors = $('#dialog_addAndEdit [name=list-error]');
-                    //    lstErrors.empty();
-                    //    var html = "";
-                    //    var total = 0;
-                    //    if (errors['contactsType']) {
-                    //        html += "<li>" + errors['contactsType'] + "</li>";
-                    //        total++;
-                    //    }
-                    //    lstErrors.html(html);
-                    //    $('#dialog_addAndEdit [name=total-errors]').html(total);
-                    //}
-                    var errors = '';
-                    for (datos in data.responseJSON) {
-                        errors += data.responseJSON[datos] + '<br/>';
-                    }
-                    Common_showErrors(data.status, errors);
-                } else {
-                    Common_showErrors('danger', 'Thất bại');
-                }
-            }
-        });
+        saveContacts();
     });
 });

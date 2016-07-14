@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{!! asset('css/notifications/alert_blackgloss.css') !!}">
     <!--notifications_end-->
     <link rel="stylesheet" href="{!! asset('css/common.css') !!}">
+    <link rel="stylesheet" href="{!! asset('css/main.css') !!}">
     {{--============================ JAVASCRIPT ==============================--}}
             <!-- jQuery 2.2.3 -->
     <script src="{!! asset('plugins/jQuery/jquery-2.2.3.min.js') !!}" type="text/javascript"></script>
