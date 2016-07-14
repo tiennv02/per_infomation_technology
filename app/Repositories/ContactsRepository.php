@@ -40,6 +40,8 @@ class ContactsRepository extends BaseRepository
     public function getLstContacts()
     {
         $data = $this->model->paginate(10);
+        $data->setPath('');
+
         return $data;
     }
 
@@ -58,6 +60,7 @@ class ContactsRepository extends BaseRepository
             $contacts->email = $inputs['email'];
             $contacts->phone = $inputs['phone'];
             $contacts->content = $inputs['content'];
+            $contacts->type = 1;
             $contacts->save();
         } catch (Exception $e) {
             $data->setResultCode('ERROR');
@@ -83,5 +86,18 @@ class ContactsRepository extends BaseRepository
     public function getContactsById($id)
     {
         return $this->getById($id);
+    }
+
+    public function delete($id)
+    {
+        $data = new ContactsResponse();
+        try {
+            $customer = $this->getById($id);
+            $customer->delete();
+        } catch (Exception $e) {
+            $data->setResultCode('ERROR');
+            $data->setResultMessage($e);
+        }
+        return $data;
     }
 }

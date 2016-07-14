@@ -353,28 +353,25 @@
                         <div class="col-md-12">
                             <div>
                                 <input name="name" type="text" class="form-control" placeholder="Họ và Tên *"
-                                       required=""
-                                       data-validation-required-message="Bạn phải nhập Họ và tên" aria-invalid="false">
+                                       required="">
 
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
                                 <input name="email" type="email" class="form-control" placeholder="Email *"
-                                       required="" data-validation-required-message="Bạn phải nhập địa chỉ email">
+                                       required="" >
 
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
                                 <input name="phone" type="tel" class="form-control" placeholder="Số điện thoại *"
-                                       required=""
-                                       data-validation-required-message="Bạn phải nhập số điện thoại">
+                                       required="">
 
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
                                 <textarea name="content" class="form-control" placeholder="Nội dung *" required=""
-                                          cols="80" rows="5"
-                                          data-validation-required-message="Bạn phải nhập nội dung"></textarea>
+                                          cols="80" rows="5"></textarea>
 
                                 <p class="help-block text-danger"></p>
                             </div>

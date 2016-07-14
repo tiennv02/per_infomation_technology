@@ -12,7 +12,7 @@ function getDataContactsById(contactsId) {
                 $("#dialog_addAndEdit").find("[name=contactsName]").val(data.name);
                 $("#dialog_addAndEdit").find("[name=contactsEmail]").val(data.email);
                 $("#dialog_addAndEdit").find("[name=contactsPhone]").val(data.phone);
-                $("#dialog_addAndEdit").find("[name=contactsType]").val(data.type);
+                $("#dialog_addAndEdit [name=contactsType] option[value='"+data.type+"']").prop("selected", true);
                 $("#dialog_addAndEdit").find("[name=contactsContent]").val(data.content);
                 $("#dialog_addAndEdit").find("[name=contactsCreateAt]").val(data.created_at);
                 $("#dialog_addAndEdit").find("[name=contactsUpdateAt]").val(data.updated_at);
@@ -20,7 +20,7 @@ function getDataContactsById(contactsId) {
             }
         },
         error: function (data) {
-            notifications('danger', 'Thất bại');
+            Common_showErrors('danger', 'Thất bại');
         }
     });
 }
@@ -64,11 +64,11 @@ $(document).ready(function () {
                 if (data.resultCode == 'OK') {
                     $('#dialog_addAndEdit').modal('hide');
                     $('.loadingPanel').toggle();
-                    notifications('success', 'Thành công');
-                    //reloadDivContent();
+                    Common_notifications('success', 'Thành công');
+                    reloadDivContent();
                 } else {
                     $('.loadingPanel').toggle();
-                    notifications('danger', data.resultMessage);
+                    Common_showErrors('danger', data.resultMessage);
                 }
             },
             error: function (data) {
@@ -77,22 +77,27 @@ $(document).ready(function () {
                 {
                 } else if (data.status === 422)//422 Unprocessable Entity
                 {
-                    var errors = data.responseJSON;
-                    if (errors && errors != null) {
-                        $('#dialog_addAndEdit [name=div-errors]').show();
-                        var lstErrors = $('#dialog_addAndEdit [name=list-error]');
-                        lstErrors.empty();
-                        var html = "";
-                        var total = 0;
-                        if (errors['contactsType']) {
-                            html += "<li>" + errors['contactsType'] + "</li>";
-                            total++;
-                        }
-                        lstErrors.html(html);
-                        $('#dialog_addAndEdit [name=total-errors]').html(total);
+                    //var errors = data.responseJSON;
+                    //if (errors && errors != null) {
+                    //    $('#dialog_addAndEdit [name=div-errors]').show();
+                    //    var lstErrors = $('#dialog_addAndEdit [name=list-error]');
+                    //    lstErrors.empty();
+                    //    var html = "";
+                    //    var total = 0;
+                    //    if (errors['contactsType']) {
+                    //        html += "<li>" + errors['contactsType'] + "</li>";
+                    //        total++;
+                    //    }
+                    //    lstErrors.html(html);
+                    //    $('#dialog_addAndEdit [name=total-errors]').html(total);
+                    //}
+                    var errors = '';
+                    for (datos in data.responseJSON) {
+                        errors += data.responseJSON[datos] + '<br/>';
                     }
+                    Common_showErrors(data.status, errors);
                 } else {
-                    notifications('danger', 'Thất bại');
+                    Common_showErrors('danger', 'Thất bại');
                 }
             }
         });

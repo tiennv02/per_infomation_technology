@@ -8,13 +8,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Http\Responses\ContactsResponse;
+use App\Http\Objects\ObjectSendMail;
 use App\Http\Requests\ContactsRequest;
+use App\Http\Responses\ContactsResponse;
+use App\Jobs\SendMail;
 use App\Repositories\ContactsRepository;
 use App\Repositories\ProjectInfoRepository;
-use App\Jobs\SendMail;
-use App\Http\Objects\ObjectSendMail;
 
 class HomeController extends Controller
 {
@@ -41,16 +40,12 @@ class HomeController extends Controller
             $response = $this->contactsRepository->store($field);
             if ($response && $response->getResultCode() == 'OK') {
                 // send mail
-                $i = 0;
-                while ($i < 10) {
-                    $i++;
-                    $objectSendMail = new ObjectSendMail();
-                    $objectSendMail->setEmail($field['email']);
-                    $objectSendMail->setUsername($field['name']);
-                    $objectSendMail->setTitle('Thư cám ơn đã gửi thư liên hệ');
-                    $objectSendMail->setContent($field['content']);
-                    $this->dispatch(new SendMail($objectSendMail));
-                }
+                $objectSendMail = new ObjectSendMail();
+                $objectSendMail->setEmail($field['email']);
+                $objectSendMail->setUsername($field['name']);
+                $objectSendMail->setTitle('Thư cám ơn đã gửi thư liên hệ');
+                $objectSendMail->setContent($field['content']);
+//                $this->dispatch(new SendMail($objectSendMail));
             } else {
                 $data->setResultCode('ERROR');
                 $data->setResultMessage($response->getResultMessage());

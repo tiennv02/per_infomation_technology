@@ -116,7 +116,7 @@
                                     </th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="dataTables_tbody">
                                 @foreach($object  as $iContacts)
                                     <tr role="row" class="odd">
                                         <td class="sorting_1">
@@ -130,7 +130,15 @@
                                         <td class="sorting_1">{{ $iContacts->name }}</td>
                                         <td>{{ $iContacts->email }}</td>
                                         <td>{{ $iContacts->phone }}</td>
-                                        <td>{{ $iContacts->type }}</td>
+                                        <td>
+                                            @if($iContacts->type == '1')
+                                                Chưa xử lý
+                                            @elseif($iContacts->type == '2')
+                                                Đã xử lý
+                                            @else
+
+                                            @endif
+                                        </td>
                                         <td class="word-break-all-200p">{{ $iContacts->content }}</td>
                                         <td>{{ $iContacts->created_at }}</td>
                                         <td>{{ $iContacts->updated_at }}</td>
@@ -216,7 +224,7 @@
     {{--contacts include js_start--}}
     <script type="text/javascript" src="{{ URL::asset('js/admin/moduls/contacts/index.js') }}"></script>
     {{--contacts include js_end--}}
-    <!-- modal start -->
-    @include('admin.moduls.contacts.addAndEdit');
+            <!-- modal start -->
+    @include('admin.moduls.contacts.addAndEdit')
     <!-- modal end -->
 @stop

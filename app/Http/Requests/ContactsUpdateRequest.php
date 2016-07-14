@@ -13,12 +13,15 @@ class ContactsUpdateRequest extends FormRequest
     public function rules()
     {
         return [
+            'contactsType' => 'required|min:0',
         ];
     }
 
     public function messages()
     {
         return [
+            'contactsType.required' => 'Trạng thái không được để trống',
+            'contactsType.min' => 'Trạng thái không được để trống',
         ];
     }
 

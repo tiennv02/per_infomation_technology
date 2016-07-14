@@ -40,6 +40,19 @@ class ContactsManagementController extends Controller
         return response()->json($contacts);
     }
 
+    public function getListContacts()
+    {
+        $data = new ContactsResponse();
+        try {
+            $lstContacts = $this->contactsRepository->getLstContacts();
+            $data->setLstContacts($lstContacts);
+        } catch (Exception $e) {
+            $data->setResultCode('ERROR');
+            $data->setResultMessage($e);
+        }
+        return response()->json($data);
+    }
+
     public function update(
         ContactsUpdateRequest $request,
         $id)
@@ -47,6 +60,18 @@ class ContactsManagementController extends Controller
         $data = new ContactsResponse();
         try {
             $data = $this->contactsRepository->update($request->all(), $id);
+        } catch (Exception $e) {
+            $data->setResultCode('ERROR');
+            $data->setResultMessage($e);
+        }
+        return response()->json($data);
+    }
+
+    public function delete($id)
+    {
+        $data = new ContactsResponse();
+        try {
+            $data = $this->contactsRepository->delete($id);
         } catch (Exception $e) {
             $data->setResultCode('ERROR');
             $data->setResultMessage($e);

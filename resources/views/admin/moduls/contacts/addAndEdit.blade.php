@@ -45,7 +45,7 @@
                             Trạng thái
                         </td>
                         <td>
-                            {!! Form::select('contactsType', ['','Chưa xử lý','Đã xử lý'], '', ['class' => 'form-control width-250p']) !!}
+                            {!! Form::select('contactsType', ['1'=>'Chưa xử lý','2'=>'Đã xử lý'], '1', ['class' => 'form-control width-250p']) !!}
                         </td>
                     </tr>
                     <tr>

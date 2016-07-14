@@ -14,7 +14,7 @@ class ContactsResponse extends Response
     /**
      * @var list contacts
      */
-    public $lstConstacts;
+    public $lstContacts;
 
     /**
      * ContactsResponse constructor.
@@ -27,17 +27,17 @@ class ContactsResponse extends Response
     /**
      * @return list
      */
-    public function getLstConstacts()
+    public function getLstContacts()
     {
-        return $this->lstConstacts;
+        return $this->lstContacts;
     }
 
     /**
-     * @param list $lstConstacts
+     * @param list $lstContacts
      */
-    public function setLstConstacts($lstConstacts)
+    public function setLstContacts($lstContacts)
     {
-        $this->lstConstacts = $lstConstacts;
+        $this->lstContacts = $lstContacts;
     }
 
 
