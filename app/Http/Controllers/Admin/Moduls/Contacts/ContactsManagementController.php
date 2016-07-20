@@ -24,11 +24,10 @@ class ContactsManagementController extends Controller
         $this->contactsRepository = $contactsRepository;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $object = $this->contactsRepository->getLstContacts();
-        $presenter = new CustomPresenter($object);
-        return view('admin.moduls.contacts.index', compact('object', 'presenter'));
+        $object = $this->contactsRepository->getLstContacts($request->all());
+        return view('admin.moduls.contacts.index', compact('object'));
     }
 
     public function get(Request $request, $id)
@@ -41,7 +40,7 @@ class ContactsManagementController extends Controller
     {
         $data = new ContactsResponse();
         try {
-            $lstContacts = $this->contactsRepository->searchContacts($request->all());
+            $lstContacts = $this->contactsRepository->getLstContacts($request->all());
             $data->setLstContacts($lstContacts);
         } catch (Exception $e) {
             $data->setResultCode('ERROR');
@@ -50,18 +49,18 @@ class ContactsManagementController extends Controller
         return response()->json($data);
     }
 
-    public function getListContacts()
-    {
-        $data = new ContactsResponse();
-        try {
-            $lstContacts = $this->contactsRepository->getLstContacts();
-            $data->setLstContacts($lstContacts);
-        } catch (Exception $e) {
-            $data->setResultCode('ERROR');
-            $data->setResultMessage($e);
-        }
-        return response()->json($data);
-    }
+//    public function getListContacts()
+//    {
+//        $data = new ContactsResponse();
+//        try {
+//            $lstContacts = $this->contactsRepository->getLstContacts();
+//            $data->setLstContacts($lstContacts);
+//        } catch (Exception $e) {
+//            $data->setResultCode('ERROR');
+//            $data->setResultMessage($e);
+//        }
+//        return response()->json($data);
+//    }
 
     public function update(
         ContactsUpdateRequest $request,
@@ -70,7 +69,7 @@ class ContactsManagementController extends Controller
         $data = new ContactsResponse();
         try {
             $data = $this->contactsRepository->update($request->all(), $id);
-            $lstContacts = $this->contactsRepository->getLstContacts();
+            $lstContacts = $this->contactsRepository->getLstContacts($request->all());
             $data->setLstContacts($lstContacts);
         } catch (Exception $e) {
             $data->setResultCode('ERROR');

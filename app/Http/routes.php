@@ -23,7 +23,6 @@ Route::post('contacts/create', 'HomeController@contactsCreate');
 Route::get('/admin', 'Admin\AdminController@index');
 Route::get('admin/moduls/contacts', 'Admin\Moduls\Contacts\ContactsManagementController@index');
 Route::get('admin/moduls/contacts/searchContacts', 'Admin\Moduls\Contacts\ContactsManagementController@searchContacts');
-Route::get('admin/moduls/contacts/getListContacts', 'Admin\Moduls\Contacts\ContactsManagementController@getListContacts');
 Route::get('admin/moduls/contacts/get/{id}', 'Admin\Moduls\Contacts\ContactsManagementController@get');
 Route::put('admin/moduls/contacts/update/{id?}', 'Admin\Moduls\Contacts\ContactsManagementController@update');
 Route::delete('admin/moduls/contacts/delete/{id?}', 'Admin\Moduls\Contacts\ContactsManagementController@delete');

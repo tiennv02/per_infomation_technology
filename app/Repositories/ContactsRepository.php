@@ -3,6 +3,7 @@
 use App\Http\Responses\ContactsResponse;
 use App\Http\Responses\Response;
 use App\Models\Contacts;
+use App\Util\Constants;
 
 class ContactsRepository extends BaseRepository
 {
@@ -36,31 +37,47 @@ class ContactsRepository extends BaseRepository
      *
      * @return Illuminate\Support\Collection
      */
-    public function getLstContacts()
+    public function getLstContacts($inputs = null)
     {
-        $data = $this->model->paginate(10);
-        return $data;
-    }
-
-    public function searchContacts($inputs = null)
-    {
+        $currentPage = Constants::$_page["CURRENT_PAGE"];
+        $limitRows = Constants::$_page["LIMIT_ROWS"];
+        $showLinkTotal = Constants::$_page["SHOW_LINK_TOTAL"];
+        $lst = $this->model;
         if ($inputs && $inputs != null) {
-            $data = $this->model;
-            if (isset($inputs['searchName'])&& $inputs['searchName'] != '') {
-                $data = $data->where('name', 'like', '%' . $inputs['searchName'] . '%');
+            if (isset($inputs['pages']) && $inputs['pages'] != '') {
+                $currentPage = $inputs['pages'];
+            }
+            if (isset($inputs['searchName']) && $inputs['searchName'] != '') {
+                $lst = $lst->where('name', 'like', '%' . $inputs['searchName'] . '%');
             }
             if (isset($inputs['searchEmail']) && $inputs['searchEmail'] != '') {
-                $data = $data->where('email', 'like', '%' . $inputs['searchEmail'] . '%');
+                $lst = $lst->where('email', 'like', '%' . $inputs['searchEmail'] . '%');
             }
             if (isset($inputs['searchPhone']) && $inputs['searchPhone'] != '') {
-                $data = $data->where('phone', 'like', '%' . $inputs['searchPhone'] . '%');
+                $lst = $lst->where('phone', 'like', '%' . $inputs['searchPhone'] . '%');
             }
             if (isset($inputs['searchType']) && $inputs['searchType'] != '') {
-                $data = $data->where('type', '=',  $inputs['searchType']);
+                $lst = $lst->where('type', '=', $inputs['searchType']);
             }
-            $data = $data->paginate(10);
-            return $data;
         }
+        $lst = $lst->skip(($currentPage - 1) * $limitRows)->take($limitRows)->get();
+        $count = $this->model->count();
+        //last page
+        $total = $count;
+        $lastPage = 0;
+        while ($total > 0) {
+            $lastPage++;
+            $total -= $limitRows;
+        }
+        $data = array(
+            'lstContacts' => $lst,
+            'count' => $count,
+            'currentPage' => $currentPage,
+            'showLinkTotal' => $showLinkTotal,
+            'limitRows' => $limitRows,
+            'lastPage' => $lastPage,
+        );
+        return $data;
     }
 
     /**

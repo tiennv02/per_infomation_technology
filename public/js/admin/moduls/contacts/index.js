@@ -60,16 +60,19 @@ function reloadDivContent(data) {
     $("#dataTables_tbody").empty();
     if (data.resultCode == 'OK') {
         var html = "";
-        if (data.lstContacts && data.lstContacts != null) {
-            for (i in data.lstContacts.data) {
-                var item = data.lstContacts.data[i];
+        if (data.lstContacts
+            && data.lstContacts != null
+            && data.lstContacts.lstContacts
+            && data.lstContacts.lstContacts != null) {
+            for (i in data.lstContacts.lstContacts) {
+                var item = data.lstContacts.lstContacts[i];
                 var text = '<tr role="row" class="odd">'
                     + '<td class="sorting_1">'
                     + '<samp class="glyphicon glyphicon-edit" name="lk_show_dialog_info"></samp>&nbsp;'
                     + '<samp class="glyphicon glyphicon-trash" name="lk_delete_customer"></samp>'
                     + '<input type="hidden" name="contactsId" value="' + item.id + '">'
                     + '</td>'
-                    + '<td class="sorting_1">' + item.name + '</td>'
+                    + '<td class="sorting_1">' + item.id + " => " + item.name + '</td>'
                     + '<td>' + item.email + '</td>'
                     + '<td>' + item.phone + '</td>'
                     + '<td>' + (item.type == 2 ? 'Ðã xử lý' : 'Chưa xử lý') + '</td>'

@@ -26,6 +26,7 @@ function getDataContactsById(contactsId) {
 }
 
 function saveContacts() {
+    var currentPage = $('[name=currentPage]').val();
     $('.loadingPanel').toggle();
     $.ajaxSetup({
         headers: {
@@ -34,7 +35,8 @@ function saveContacts() {
     });
 
     var formData = {
-        contactsType: $("#dialog_addAndEdit").find("[name=contactsType]").val()
+        contactsType: $("#dialog_addAndEdit").find("[name=contactsType]").val(),
+        pages: currentPage,
     }
     var contactsId = $("#dialog_addAndEdit").find("[name=contactsId]").val();
     var type = "PUT";
