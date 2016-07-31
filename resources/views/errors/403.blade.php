@@ -1,41 +1,28 @@
-<html>
-	<head>
-		<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+@extends('layouts/basic')
 
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				width: 100%;
-				height: 100%;
-				color: #B0BEC5;
-				display: table;
-				font-weight: 100;
-				font-family: 'Lato';
-			}
+{{-- Page title --}}
+@section('title')
+403
+@parent
+@stop
 
-			.container {
-				text-align: center;
-				display: table-cell;
-				vertical-align: middle;
-			}
+{{-- Page content --}}
 
-			.content {
-				text-align: center;
-				display: inline-block;
-			}
+@section('content')
 
-			.title {
-				font-size: 72px;
-				margin-bottom: 40px;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="content">
-				<div class="title">This action is unauthorized.</div>
-			</div>
-		</div>
-	</body>
-</html>
+
+
+<div class="row">
+  <div class="col-md-12">
+
+    <div class="error-page" style="padding-top: 200px">
+      <img src="{!! asset('img/errors/403.png') !!}" style="width: 200px; height: 200px;" class="pull-left">
+            <div class="error-content">
+              <h3><i class="fa fa-warning text-yellow"></i> 403 Forbidden.</h3>
+              <p>
+                Sad panda. You are not authorized to do the thing. Maybe <a href="{{ config('app.url') }}">return to the dashboard</a>, or contact your administrator.
+              </p>
+
+    </div>
+</div>
+@stop

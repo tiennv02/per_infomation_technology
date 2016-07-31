@@ -45,7 +45,10 @@ class ContactsRepository extends BaseRepository
         $lst = $this->model;
         if ($inputs && $inputs != null) {
             if (isset($inputs['pages']) && $inputs['pages'] != '') {
-                $currentPage = $inputs['pages'];
+                $currentPage = intval($inputs['pages']);
+            }
+            if (isset($inputs['limitRows']) && $inputs['limitRows'] != '') {
+                $limitRows = intval($inputs['limitRows']);
             }
             if (isset($inputs['searchName']) && $inputs['searchName'] != '') {
                 $lst = $lst->where('name', 'like', '%' . $inputs['searchName'] . '%');
@@ -56,12 +59,12 @@ class ContactsRepository extends BaseRepository
             if (isset($inputs['searchPhone']) && $inputs['searchPhone'] != '') {
                 $lst = $lst->where('phone', 'like', '%' . $inputs['searchPhone'] . '%');
             }
-            if (isset($inputs['searchType']) && $inputs['searchType'] != '') {
+            if (isset($inputs['searchType']) && $inputs['searchType'] != '' && $inputs['searchType'] > 0) {
                 $lst = $lst->where('type', '=', $inputs['searchType']);
             }
         }
+        $count = $lst->count();
         $lst = $lst->skip(($currentPage - 1) * $limitRows)->take($limitRows)->get();
-        $count = $this->model->count();
         //last page
         $total = $count;
         $lastPage = 0;
@@ -98,7 +101,7 @@ class ContactsRepository extends BaseRepository
             $contacts->type = 1;
             $contacts->save();
         } catch (Exception $e) {
-            $data->setResultCode('ERROR');
+            $data->setResultCode(Constants::$_resultCode["ERROR"]);
             $data->setResultMessage($e);
         }
         return $data;
@@ -112,7 +115,7 @@ class ContactsRepository extends BaseRepository
             $customer->type = $inputs['contactsType'];
             $customer->save();
         } catch (Exception $e) {
-            $data->setResultCode('ERROR');
+            $data->setResultCode(Constants::$_resultCode["ERROR"]);
             $data->setResultMessage($e);
         }
         return $data;
@@ -130,7 +133,7 @@ class ContactsRepository extends BaseRepository
             $customer = $this->getById($id);
             $customer->delete();
         } catch (Exception $e) {
-            $data->setResultCode('ERROR');
+            $data->setResultCode(Constants::$_resultCode["ERROR"]);
             $data->setResultMessage($e);
         }
         return $data;

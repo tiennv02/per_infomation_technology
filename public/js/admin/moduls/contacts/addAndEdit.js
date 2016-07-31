@@ -26,18 +26,22 @@ function getDataContactsById(contactsId) {
 }
 
 function saveContacts() {
-    var currentPage = $('[name=currentPage]').val();
     $('.loadingPanel').toggle();
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-
+    var currentPage = $('[name=pagingDiv] .active div').html();
     var formData = {
+        searchName: $("#tblSearch").find("[name=searchName]").val(),
+        searchEmail: $("#tblSearch").find("[name=searchEmail]").val(),
+        searchPhone: $("#tblSearch").find("[name=searchPhone]").val(),
+        searchType: $("#tblSearch").find("[name=searchType]").val(),
         contactsType: $("#dialog_addAndEdit").find("[name=contactsType]").val(),
-        pages: currentPage,
-    }
+        limitRows: $("[name=slRowsInPage]").val(),
+        pages: currentPage
+    };
     var contactsId = $("#dialog_addAndEdit").find("[name=contactsId]").val();
     var type = "PUT";
     var url = "contacts/update/" + contactsId;
@@ -52,6 +56,8 @@ function saveContacts() {
                 $('.loadingPanel').toggle();
                 Common_notifications('success', 'Thành công');
                 reloadDivContent(data);
+                var objectPaging = data.lstContacts;
+                intPaging($('[name=pagingDiv]'), objectPaging.limitRows, objectPaging.count, objectPaging.currentPage, objectPaging.lastPage, objectPaging.showLinkTotal);
             } else {
                 $('.loadingPanel').toggle();
                 Common_showErrors('danger', data.resultMessage);

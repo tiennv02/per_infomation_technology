@@ -11,7 +11,6 @@ namespace App\Http\Controllers\Admin\Moduls\Contacts;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ContactsUpdateRequest;
 use App\Http\Responses\ContactsResponse;
-use App\Http\Util\CustomPresenter;
 use App\Repositories\ContactsRepository;
 use Illuminate\Http\Request;
 
@@ -43,28 +42,26 @@ class ContactsManagementController extends Controller
             $lstContacts = $this->contactsRepository->getLstContacts($request->all());
             $data->setLstContacts($lstContacts);
         } catch (Exception $e) {
-            $data->setResultCode('ERROR');
+            $data->setResultCode(Constants::$_resultCode["ERROR"]);
             $data->setResultMessage($e);
         }
         return response()->json($data);
     }
 
-//    public function getListContacts()
-//    {
-//        $data = new ContactsResponse();
-//        try {
-//            $lstContacts = $this->contactsRepository->getLstContacts();
-//            $data->setLstContacts($lstContacts);
-//        } catch (Exception $e) {
-//            $data->setResultCode('ERROR');
-//            $data->setResultMessage($e);
-//        }
-//        return response()->json($data);
-//    }
+    public function getLstContacts(Request $request)
+    {
+        $data = new ContactsResponse();
+        try {
+            $lstContacts = $this->contactsRepository->getLstContacts($request->all());
+            $data->setLstContacts($lstContacts);
+        } catch (Exception $e) {
+            $data->setResultCode(Constants::$_resultCode["ERROR"]);
+            $data->setResultMessage($e);
+        }
+        return response()->json($data);
+    }
 
-    public function update(
-        ContactsUpdateRequest $request,
-        $id)
+    public function update(ContactsUpdateRequest $request, $id)
     {
         $data = new ContactsResponse();
         try {
@@ -72,21 +69,21 @@ class ContactsManagementController extends Controller
             $lstContacts = $this->contactsRepository->getLstContacts($request->all());
             $data->setLstContacts($lstContacts);
         } catch (Exception $e) {
-            $data->setResultCode('ERROR');
+            $data->setResultCode(Constants::$_resultCode["ERROR"]);
             $data->setResultMessage($e);
         }
         return response()->json($data);
     }
 
-    public function delete($id)
+    public function delete(Request $request, $id)
     {
         $data = new ContactsResponse();
         try {
             $data = $this->contactsRepository->delete($id);
-            $lstContacts = $this->contactsRepository->getLstContacts();
+            $lstContacts = $this->contactsRepository->getLstContacts($request->all());
             $data->setLstContacts($lstContacts);
         } catch (Exception $e) {
-            $data->setResultCode('ERROR');
+            $data->setResultCode(Constants::$_resultCode["ERROR"]);
             $data->setResultMessage($e);
         }
         return response()->json($data);

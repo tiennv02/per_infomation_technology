@@ -23,6 +23,10 @@ function sendContact() {
         success: function (data) {
             $('.loadingPanel').toggle();
             if (data.resultCode == 'OK') {
+                $('#contact [name=name]').val('');
+                $('#contact [name=email]').val('');
+                $('#contact [name=phone]').val('');
+                $('#contact [name=content]').val('');
                 Common_notifications('success', 'Hoàn thành');
             } else {
                 Common_notifications('danger', data.resultMessage);
@@ -37,13 +41,6 @@ function sendContact() {
             Common_showErrors(data.status, errors);
         }
     });
-}
-
-function notifications(type, text) {
-    $('.notifications').notify({
-        type: type,
-        message: {text: text}
-    }).show();
 }
 
 $(document).ready(function () {

@@ -131,13 +131,17 @@ Available commands:
   
 ---------------
 Exmaple:
+php artisan key:generate
 php artisan make:migration create_articles_table --create=contacts
 php artisan migrate:rollback
 php artisan migrate
 php artisan migrate:install
 php artisan db:seed --class=ProjectInfoTableSeeder
 
+composer clearcache
+composer install
 composer update
+composer update --no-scripts
 composer dump-autoload
 composer require guzzlehttp/guzzle
 composer require barryvdh/laravel-debugbar 

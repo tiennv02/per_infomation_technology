@@ -30,7 +30,7 @@
             <!-- jQuery 2.2.3 -->
     <script src="{!! asset('plugins/jQuery/jquery-2.2.3.min.js') !!}" type="text/javascript"></script>
     <!-- jQuery UI 1.11.4 -->
-    <script src="{!! asset('https://code.jquery.com/ui/1.11.4/jquery-ui.min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/jquery/jquery-ui.min-1-11-4.js') !!}" type="text/javascript"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button);
@@ -45,7 +45,7 @@
     <!--notifications_end-->
     <script src="{!! asset('js/app/app.min.js') !!}" type="text/javascript"></script>
     <script src="{!! asset('js/common.js') !!}" type="text/javascript"></script>
-    <script src="{!! asset('js/main.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/paging.js') !!}" type="text/javascript"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper" style="background-color: #ecf0f5;">
@@ -197,16 +197,16 @@
                 <li class="header" style="color:white; background: #222d32">Menu</li>
                 <li>
                     <a href="{!! url('/admin') !!}">
-                        <i class="fa fa-th"></i> <span>Widgets</span>
+                        <i class="fa fa-th"></i> <span>Dashboard</span>
                     </a>
                 </li>
                 <li>
                     <a href="{!! url('/admin/moduls/contacts') !!}">
-                        <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                        <i class="fa fa-envelope"></i> <span>Management Contacts</span>
                     </a>
                 </li>
-                <li><a href="{!! url('/admin/moduls/projectInfo') !!}"><i class="fa fa-book"></i>
-                        <span>Documentation</span></a></li>
+                <li><a href="{!! url('/admin/moduls/projectInfo') !!}">
+                        <i class="fa fa-book"></i><span>Project Info</span></a></li>
             </ul>
         </section>
     </aside>

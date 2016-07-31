@@ -87,3 +87,20 @@
 }
 
 /*custom page end*/
+
+.div-text-overflow {
+    height: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.span-green-radio-order {
+    padding: 5px 9px;
+    border-radius: 20px;
+}
+
+.div-content {
+    background-color: white !important;
+    margin: 0px 15px 0px;
+    border: 1px solid #fff;
+}

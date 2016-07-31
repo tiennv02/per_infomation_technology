@@ -11,6 +11,11 @@ class Constants
     public static $_page = array(
         'CURRENT_PAGE' => 1, // Trang hiện tại
         'LIMIT_ROWS' => 10,// Limit
-        'SHOW_LINK_TOTAL' => 4,// Show link total
+        'SHOW_LINK_TOTAL' => 7,// Show link total
+    );
+
+    public static $_resultCode = array(
+        'ERROR' => 'ERROR',
+        'OK' => 'OK'
     );
 }

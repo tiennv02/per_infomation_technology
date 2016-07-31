@@ -15,9 +15,10 @@
     <!-- Bootstrap Core, social CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/agency.css" type="text/css">
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <link rel="stylesheet" href="css/social-buttons.css" type="text/css">
+    <link rel="stylesheet" href="css/templates/agency.css" type="text/css">
+    <link rel="stylesheet" href="css/templates/social-buttons.css" type="text/css">
+    <link rel="stylesheet" href="css/templates/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/templates/creative.css" type="text/css">
     <!--notifications_start-->
     <link rel="stylesheet" href="css/bootstrap/bootstrap-notify.css" type="text/css">
     <link rel="stylesheet" href="css/notifications/alert_bangtidy.css" type="text/css">
@@ -29,7 +30,7 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
           rel='stylesheet' type='text/css'>
     <!-- Custom Fonts End-->
-    <!--custom css-->
+    <!--Custom css-->
     <link rel="stylesheet" href="css/common.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <!-- jQuery -->
@@ -41,17 +42,16 @@
     <script src="js/jquery/scrollreveal.min.js"></script>
     <script src="js/jquery/jquery.easing.min.js"></script>
     <script src="js/jquery/jquery.fittext.js"></script>
+    <script src="js/jquery/jquery.magnific-popup.min.js"></script>
     <!--notifications_start-->
     <script src="js/bootstrap/bootstrap-notify.js"></script>
     <!--notifications_end-->
     <!-- Custom Theme JavaScript -->
-    <script src="js/jquery/creative.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
     <script src="js/common.js"></script>
 </head>
 
 <body id="page-top">
-
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top menu-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -80,7 +80,7 @@
                     <a class="page-scroll" href="#portfolio">Sản phẩm</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#partner">Đối tác</a>
+                    <a class="page-scroll" href="#partner">Ðối tác</a>
                 </li>
                 {{--<li>--}}
                 {{--<a class="page-scroll" href="#about">Thông tin</a>--}}
@@ -406,11 +406,11 @@
             </div>
             <div class="col-md-4">
                 <ul class="list-inline quicklinks">
-                    <li><a href="#home" class="text-decoration-none"><p><span class="glyphicon glyphicon-home"></span>
-                                Về đầu trang</p></a>
+                    <li><a href="#home" class="text-decoration-none"><span class="glyphicon glyphicon-home"></span>
+                                Về đầu trang</a>
                     </li>
-                    <li><a href="#contact" class="text-decoration-none"><p><span
-                                        class="glyphicon glyphicon-envelope"></span> Liên hệ</p></a>
+                    <li><a href="#contact" class="text-decoration-none"><span
+                                        class="glyphicon glyphicon-envelope"></span> Liên hệ</a>
                     </li>
                 </ul>
             </div>
@@ -465,6 +465,7 @@
     </div>
 </div>
 <!--loading panel_end-->
+<script src="js/jquery/creative.js"></script>
 </body>
 
 </html>

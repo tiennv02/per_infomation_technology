@@ -1,7 +1,9 @@
 <?php namespace App\Repositories;
 
-use App\Models\ProjectInfo;
 use App\Http\Responses\Response;
+use App\Models\ProjectInfo;
+use App\Util\Constants;
+use Carbon\Carbon;
 
 class ProjectInfoRepository extends BaseRepository
 {
@@ -25,5 +27,40 @@ class ProjectInfoRepository extends BaseRepository
     public function getLstProjectInfo()
     {
         return $this->model->get();
+    }
+
+    /**
+     * Get max field order
+     *
+     * @retun int
+     */
+    public function getMaxOrder()
+    {
+        return $this->model->max('order');
+    }
+
+    /**
+     * Update store collection.
+     *
+     * @return App\Http\Responses\Responsess
+     */
+    public function store($object)
+    {
+        $data = new Response();
+        try {
+            $projectInfo = new $this->model;
+            $projectInfo->name = $object->name;
+            $projectInfo->description = $object->description;
+            $projectInfo->content = $object->content;
+            $projectInfo->image = $object->image;
+            $projectInfo->order = $object->order;
+            $projectInfo->created_at = Carbon::now();
+            $projectInfo->updated_at = Carbon::now();
+            $projectInfo->save();
+        } catch (Exception $e) {
+            $data->setResultCode(Constants::$_resultCode["ERROR"]);
+            $data->setResultMessage($e);
+        }
+        return $data;
     }
 }

@@ -19,8 +19,6 @@
                     <button data-widget="collapse" class="btn btn-box-tool" type="button"><i
                                 class="fa fa-chevron-down"></i>
                     </button>
-                    {{--<button data-widget="remove" class="btn btn-box-tool" type="button"><i class="fa fa-remove"></i>--}}
-                    {{--</button>--}}
                 </div>
             </div>
             <div class="box-body" style="display: block;">
@@ -49,14 +47,17 @@
                         <td>
                             <select name="searchType" class="form-control select2 select2-hidden-accessible"
                                     style="width: 100%;">
-                                <option value="1" selected="selected">Chưa xử lý</option>
+                                <option value="0" selected="selected"></option>
+                                <option value="1">Chưa xử lý</option>
                                 <option value="2">Đã xử lý</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td class="padding-top-10p" colspan="4">
-                            <button class="btn btn-default float-right" type="button" name="btnSearch">Tìm kiếm</button>
+                            <div class="col-sm-5">
+                            </div>
+                            <button class="btn btn-default" type="button" name="btnSearch">Tìm kiếm</button>
                         </td>
                     </tr>
                 </table>
@@ -68,9 +69,10 @@
                 <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
                     <div class="row">
                         <div class="col-sm-6">
-                            <div class="dataTables_length" id="cbPagesOnRows"><label>Hiển thị <select
-                                            name="example1_length" aria-controls="example1"
-                                            class="form-control input-sm">
+                            <div class="dataTables_length" id="cbPagesOnRows"><label>Hiển thị
+                                    <select name="slRowsInPage" class="form-control input-sm"
+                                            onchange="selectRowsInPage()">
+                                        <option value="5">5</option>
                                         <option value="10" selected="selected">10</option>
                                         <option value="25">25</option>
                                         <option value="50">50</option>
@@ -87,7 +89,7 @@
                                 <thead>
                                 <tr role="row">
                                     <th class="text-align-center"
-                                        style="width: 75px;">#
+                                        style="width: 60px;">#
                                     </th>
                                     <th class="text-align-center"
                                         style="width: 175px;">Họ và Tên
@@ -118,7 +120,7 @@
                                 <tbody id="dataTables_tbody">
                                 @foreach($object['lstContacts']  as $iContacts)
                                     <tr role="row" class="odd">
-                                        <td class="sorting_1">
+                                        <td>
                                             <samp class="glyphicon glyphicon-edit"
                                                   name="lk_show_dialog_info"></samp>
                                             &nbsp;
@@ -126,7 +128,7 @@
                                                   name="lk_delete_customer"></samp>
                                             <input type="hidden" name="contactsId" value="{{$iContacts->id}}"/>
                                         </td>
-                                        <td class="sorting_1">{{ $iContacts->id }} => {{ $iContacts->name }}</td>
+                                        <td> {{ $iContacts->name }}</td>
                                         <td>{{ $iContacts->email }}</td>
                                         <td>{{ $iContacts->phone }}</td>
                                         <td>
@@ -141,45 +143,45 @@
                                         <td class="word-break-all-200p">
                                             <div class="text-overflow-hide">{{ $iContacts->content }}</div>
                                         </td>
-                                        <td>{{ $iContacts->created_at }}</td>
-                                        <td>{{ $iContacts->updated_at }}</td>
+                                        <td>{{ $iContacts->created_at->format('d/m/Y H:i:s') }}</td>
+                                        <td>{{ $iContacts->updated_at->format('d/m/Y H:i:s') }}</td>
                                     </tr>
                                 @endforeach
                                 </tbody>
-                                {{--<tfoot>--}}
-                                {{--<tr>--}}
-                                    {{--<th class="text-align-center">#</th>--}}
-                                    {{--<th class="text-align-center">Họ và Tên</th>--}}
-                                    {{--<th class="text-align-center">Email</th>--}}
-                                    {{--<th class="text-align-center">Số điện thoại</th>--}}
-                                    {{--<th class="text-align-center">Trạng thái</th>--}}
-                                    {{--<th class="text-align-center">Nội dung</th>--}}
-                                    {{--<th class="text-align-center">Ngày tạo</th>--}}
-                                    {{--<th class="text-align-center">Cập nhật</th>--}}
-                                {{--</tr>--}}
-                                {{--</tfoot>--}}
                             </table>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-5">
                             <div class="">
-                                Hiển thị {{ ($object['currentPage'] -1) * $object['limitRows'] +1 }}
-                                đến {{ $object['currentPage'] * $object['limitRows'] }}
-                                trong {{ $object['count'] }} dòng
+                                Hiển thị <span name="totalRowPage">{{ count($object['lstContacts']) }}</span> trong
+                                <span name="countRows">{{ $object['count'] }}</span> dòng
                             </div>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-7" name="pagingDiv">
                             {{--Paging start--}}
-                            <input type="hidden" name="currentPage" value="{{ $object['currentPage'] }}">
-                            <div class="">
-                                @if ($object['limitRows'] < $object['count'])
+                            @if ($object['limitRows'] < $object['count'])
+                                <div class="">
                                     <div id="news_paginate" class="">
                                         <ul class="pagination margin-none float-right">
+                                            @if($object['lastPage'] > $object['showLinkTotal'])
+                                                <li id="pageFirts" class="paginate_button page-item {{ ($object['currentPage'] == 1) ? ' disabled' : '' }}">
+                                                    @if($object['currentPage'] == 1)
+                                                        <div class="page-link">Firts</div>
+                                                    @else
+                                                        <div class="page-link" onclick="selectPage(1)">Firts</div>
+                                                    @endif
+                                                </li>
+                                            @endif
                                             <li id="news_previous"
                                                 class="paginate_button page-item previous {{ ($object['currentPage'] == 1) ? ' disabled' : '' }}">
-                                                {{--<div class="page-link" onclick="selectPage({{ $object['currentPage']-1 }})">Previous</div>--}}
-                                                <a class="page-link" href="?pages={{ $object['currentPage']-1 }}">Previous</a>
+                                                @if($object['currentPage']-1>0)
+                                                    <div class="page-link"
+                                                         onclick="selectPage({{ $object['currentPage']-1 }})">Previous
+                                                    </div>
+                                                @else
+                                                    <div class="page-link">Previous</div>
+                                                @endif
                                             </li>
                                             @for ($i = 1; $i <= $object['lastPage']; $i++)
                                                 <?php
@@ -195,26 +197,34 @@
                                                 ?>
                                                 @if ($from < $i && $i < $to)
                                                     <li class="paginate_button page-item {{ ($object['currentPage'] == $i) ? ' active' : '' }}">
-                                                        <a class="page-link" href="?pages={{ $i }}">{{ $i }}</a>
-                                                        {{--<div class="page-link" onclick="selectPage({{ $i }})">{{ $i }}</div>--}}
+                                                        <div class="page-link"
+                                                             onclick="selectPage({{ $i }})">{{ $i }}</div>
                                                     </li>
                                                 @endif
                                             @endfor
                                             <li id="news_next"
                                                 class="paginate_button page-item {{ ($object['currentPage'] == $object['lastPage']) ? ' disabled' : '' }}">
                                                 @if($object['currentPage'] == $object['lastPage'])
-                                                    {{--<div class="page-link"  onclick="selectPage({{ $object['currentPage'] }})">End</div>--}}
-                                                    <a class="page-link"
-                                                       href="?pages={{ $object['currentPage'] }}">End</a>
+                                                    <div class="page-link">End</div>
                                                 @else
-                                                    {{--<div class="page-link"  onclick="selectPage({{ $object['currentPage']+1 }})">Next</div>--}}
-                                                    <a class="page-link" href="?pages={{ $object['currentPage']+1 }}">Next</a>
+                                                    <div class="page-link"
+                                                         onclick="selectPage({{ $object['currentPage']+1 }})">Next
+                                                    </div>
                                                 @endif
                                             </li>
+                                            @if($object['lastPage'] > $object['showLinkTotal'])
+                                                <li id="pageLast" class="paginate_button page-item {{ ($object['currentPage'] == lastPage) ? ' disabled' : '' }}">
+                                                    @if($object['currentPage'] == $object['lastPage'])
+                                                        <div class="page-link">Last</div>
+                                                    @else
+                                                        <div class="page-link" onclick="selectPage($object['lastPage'])">Last</div>
+                                                    @endif
+                                                </li>
+                                            @endif
                                         </ul>
                                     </div>
-                                @endif
-                            </div>
+                                </div>
+                            @endif
                             {{--Paging end--}}
                         </div>
                     </div>
@@ -225,7 +235,7 @@
     {{--contacts include js_start--}}
     <script type="text/javascript" src="{{ URL::asset('js/admin/moduls/contacts/index.js') }}"></script>
     {{--contacts include js_end--}}
-    <!-- modal start -->
+            <!-- modal start -->
     @include('admin.moduls.contacts.addAndEdit')
-    <!-- modal end -->
+            <!-- modal end -->
 @stop
