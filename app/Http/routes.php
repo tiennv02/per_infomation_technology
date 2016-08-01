@@ -38,12 +38,12 @@ Route::get('admin/moduls/projectInfo', 'Admin\Moduls\ProjectInfo\ProjectInfoCont
 Route::get('admin/moduls/projectInfo/{projectInfoId}/view', 'Admin\Moduls\ProjectInfo\ProjectInfoController@getView');
 //create
 Route::get('admin/moduls/projectInfo/create', 'Admin\Moduls\ProjectInfo\ProjectInfoController@getCreate');
-Route::post('admin/moduls/projectInfo/store', 'Admin\Moduls\ProjectInfo\ProjectInfoController@store');
+Route::post('admin/moduls/projectInfo/create', 'Admin\Moduls\ProjectInfo\ProjectInfoController@create');
 //edit
-Route::get('admin/moduls/projectInfo/{projectInfoId}/edit', 'Admin\Moduls\ProjectInfo\ProjectInfoController@getEdit');
+Route::get('admin/moduls/projectInfo/edit', [ 'as' => 'projectInfo.edit', 'uses' => 'Admin\Moduls\ProjectInfo\ProjectInfoController@getEdit' ]);
 Route::post('admin/moduls/projectInfo/{projectInfoId}/update', 'Admin\Moduls\ProjectInfo\ProjectInfoController@update');
 //delete
-Route::get('admin/moduls/projectInfo/{projectInfoId}/destroy', 'Admin\Moduls\ProjectInfo\ProjectInfoController@destroy');
+Route::delete('admin/moduls/projectInfo/delete', [ 'as' => 'projectInfo.delete', 'uses' => 'Admin\Moduls\ProjectInfo\ProjectInfoController@delete' ]);
 /*
  * Checkout connect Databases
  */

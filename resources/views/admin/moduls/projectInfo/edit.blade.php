@@ -23,7 +23,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Thêm mới Project</h3>
                     </div>
-                    {{ Form::open(['url' => 'admin/moduls/projectInfo/store', 'method' => 'POST', 'files' => true, 'autocomplete' => 'off'
+                    {{ Form::open(['url' => 'admin/moduls/projectInfo/create', 'method' => 'POST', 'files' => true, 'autocomplete' => 'off'
                     ]) }}
                             <!-- CSRF Token -->
                     {{--{{ Form::token() }}--}}
@@ -59,7 +59,7 @@
                         &nbsp;&nbsp;
                         <button class="btn btn-default" name="btnResetForm">Làm lại</button>
                     </div>
-                    </form>
+                    {{ Form::close() }}
                 </div>
             </div>
         </div>

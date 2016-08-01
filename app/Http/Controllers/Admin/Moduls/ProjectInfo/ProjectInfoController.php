@@ -37,12 +37,22 @@ class ProjectInfoController extends Controller
         return view('admin.moduls.projectInfo.edit');
     }
 
-    public function destroy()
+    public function delete()
     {
-        return view('admin.moduls.projectInfo.edit');
+        $id = e(Input::get('id'));
+        if (is_null($id)) {
+            return redirect()->to('admin/moduls/projectInfo')->with('error', 'Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
+        }
+        $reponse = $this->projectInfoRepository->delete($id);
+        if ($reponse->getResultCode() && $reponse->getResultCode() == Constants::$_resultCode["OK"]) {
+            return redirect()->to("admin/moduls/projectInfo")->with('success', 'Đã xóa thành công');
+        } else {
+            return redirect()->back()->withInput()->withErrors($reponse->getResultMessage());
+        }
+        return redirect()->to('admin/moduls/projectInfo')->with('error', 'Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
     }
 
-    public function store()
+    public function create()
     {
         $file_name = "";
         // upload file
@@ -60,10 +70,10 @@ class ProjectInfoController extends Controller
         $projectInfo = new ProjectInfo();
         $projectInfo->name = e(Input::get('name'));
         $projectInfo->description = e(Input::get('description'));
-        $projectInfo->content = e(Input::get('contents'));
+        $projectInfo->content = Input::get('contents');
         $projectInfo->image = $file_name;
         $projectInfo->order = $this->projectInfoRepository->getMaxOrder() + 1;
-        $reponse = $this->projectInfoRepository->store($projectInfo);
+        $reponse = $this->projectInfoRepository->create($projectInfo);
         if ($reponse->getResultCode() && $reponse->getResultCode() == Constants::$_resultCode["OK"]) {
             return redirect()->to("admin/moduls/projectInfo")->with('success', 'Đã thêm mới thành công');
         } else {

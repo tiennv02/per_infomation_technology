@@ -44,7 +44,7 @@ class ProjectInfoRepository extends BaseRepository
      *
      * @return App\Http\Responses\Responsess
      */
-    public function store($object)
+    public function create($object)
     {
         $data = new Response();
         try {
@@ -57,6 +57,23 @@ class ProjectInfoRepository extends BaseRepository
             $projectInfo->created_at = Carbon::now();
             $projectInfo->updated_at = Carbon::now();
             $projectInfo->save();
+        } catch (Exception $e) {
+            $data->setResultCode(Constants::$_resultCode["ERROR"]);
+            $data->setResultMessage($e);
+        }
+        return $data;
+    }
+
+    /**
+     * Delete projectInfo collection.
+     *
+     * @return App\Http\Responses\Responsess
+     */
+    public function delete($id)
+    {
+        $data = new Response();
+        try {
+            $this->getById($id)->delete();
         } catch (Exception $e) {
             $data->setResultCode(Constants::$_resultCode["ERROR"]);
             $data->setResultMessage($e);

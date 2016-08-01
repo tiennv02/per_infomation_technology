@@ -13,7 +13,7 @@
     <section class="content-header">
         <!-- notifications start -->
         @include('utils.notifications')
-        <!-- notifications end -->
+                <!-- notifications end -->
     </section>
     <section class="content">
         <div class="box box-default">
@@ -83,7 +83,7 @@
                                     style="width: 100px;">Vị trí hiển thị
                                 </th>
                                 <th class="text-align-center"
-                                    style="width: 60px;">#
+                                    style="width: 100px;">#
                                 </th>
                             </tr>
                             </thead>
@@ -106,14 +106,22 @@
                                                 class="badge bg-green span-green-radio-order">{{ $iProjectInfo->order }}</span>
                                     </td>
                                     <td>
-                                        <a class="glyphicon glyphicon-edit"
-                                           href="{{ URL::current() }}/{{$iProjectInfo->id}}/edit"
-                                           name="lk_show_dialog_info"></a>
-                                        &nbsp;
-                                        <a class="glyphicon glyphicon-trash"  onclick="return confirm('Bạn có chắc chắn muốn xóa dữ liệu này đi không？')"
-                                           href="{{ URL::current() }}/{{$iProjectInfo->id}}/destroy"
-                                           name="lk_delete_customer"></a>
-                                        <input type="hidden" name="projectInfo" value="{{$iProjectInfo->id}}"/>
+                                        {!! Form::open(['method' => 'GET', 'route' => 'projectInfo.edit', 'class' =>'float-left'])!!}
+                                        {!! Form::hidden('id', $iProjectInfo->id)!!}
+                                        {!! Form::button('<i class="fa fa-pencil icon-white"></i>', ['class' => 'btn btn-warning btn-sm', 'type'=>'submit']) !!}
+                                        {!! Form::close() !!}
+                                        {{--<a class="glyphicon glyphicon-edit"--}}
+                                        {{--href="{{ URL::current() }}/{{$iProjectInfo->id}}/edit"--}}
+                                        {{--name="lk_show_dialog_info"></a>--}}
+                                        <span class="float-left">&nbsp;&nbsp;</span>
+                                        {{--<a class="glyphicon glyphicon-trash"  onclick="return confirm('Bạn có chắc chắn muốn xóa dữ liệu này đi không？')"--}}
+                                        {{--href="{{ URL::current() }}/{{$iProjectInfo->id}}/destroy"--}}
+                                        {{--name="lk_delete_customer"></a>--}}
+                                        {{--<input type="hidden" name="projectInfo" value="{{$iProjectInfo->id}}"/>--}}
+                                        {!! Form::open(['method' => 'DELETE', 'route' => 'projectInfo.delete', 'class' =>'delete-confirm float-left']) !!}
+                                        {!! Form::hidden('id', $iProjectInfo->id)  !!}
+                                        {!! Form::button('<i class="fa fa-trash icon-white"></i>', ['class' => 'btn btn-danger btn-sm', 'type'=>'submit']) !!}
+                                        {!! Form::close() !!}
                                     </td>
                                 </tr>
                             @endforeach
@@ -124,4 +132,9 @@
             </div>
         </div>
     </section>
+    <script>
+        $(".delete-confirm").on("submit", function () {
+            return confirm("Bạn có chắc chắn muốn xóa bản ghi này?");
+        });
+    </script>
 @stop
