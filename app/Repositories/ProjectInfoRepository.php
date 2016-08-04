@@ -40,7 +40,7 @@ class ProjectInfoRepository extends BaseRepository
     }
 
     /**
-     * Update store collection.
+     * Create store collection.
      *
      * @return App\Http\Responses\Responsess
      */
@@ -65,6 +65,32 @@ class ProjectInfoRepository extends BaseRepository
     }
 
     /**
+     * Update store collection.
+     *
+     * @return App\Http\Responses\Responsess
+     */
+    public function update($object)
+    {
+        $data = new Response();
+        try {
+            $projectInfo = $this->getById($object->id);
+            $projectInfo->name = $object->name;
+            $projectInfo->description = $object->description;
+            $projectInfo->content = $object->content;
+            if ($object->image) {
+                $projectInfo->image = $object->image;
+            }
+            $projectInfo->order = $object->order;
+            $projectInfo->updated_at = Carbon::now();
+            $projectInfo->save();
+        } catch (Exception $e) {
+            $data->setResultCode(Constants::$_resultCode["ERROR"]);
+            $data->setResultMessage($e);
+        }
+        return $data;
+    }
+
+    /**
      * Delete projectInfo collection.
      *
      * @return App\Http\Responses\Responsess
@@ -79,5 +105,15 @@ class ProjectInfoRepository extends BaseRepository
             $data->setResultMessage($e);
         }
         return $data;
+    }
+
+    /**
+     * Get projectInfo collection.
+     *
+     * @return App\Http\Responses\Responsess
+     */
+    public function getProjectInfoById($id)
+    {
+        return $this->getById($id);
     }
 }

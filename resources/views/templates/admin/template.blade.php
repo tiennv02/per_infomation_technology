@@ -23,11 +23,13 @@
     <link rel="stylesheet" href="{!! asset('css/bootstrap/bootstrap-notify.css') !!}">
     <link rel="stylesheet" href="{!! asset('css/notifications/alert_bangtidy.css') !!}">
     <link rel="stylesheet" href="{!! asset('css/notifications/alert_blackgloss.css') !!}">
+    <!--CKEditor-->
+    <link rel="stylesheet" href="{!! asset('plugins/ckeditor/contents.css') !!}">
     <!--notifications_end-->
     <link rel="stylesheet" href="{!! asset('css/common.css') !!}">
     <link rel="stylesheet" href="{!! asset('css/main.css') !!}">
     {{--============================ JAVASCRIPT ==============================--}}
-            <!-- jQuery 2.2.3 -->
+    <!-- jQuery 2.2.3 -->
     <script src="{!! asset('plugins/jQuery/jquery-2.2.3.min.js') !!}" type="text/javascript"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="{!! asset('js/jquery/jquery-ui.min-1-11-4.js') !!}" type="text/javascript"></script>
@@ -37,6 +39,11 @@
     </script>
     <!-- Bootstrap 3.3.6 -->
     <script src="{!! asset('js/bootstrap/bootstrap.min.js') !!}" type="text/javascript"></script>
+    <!-- CK Editor -->
+    <script src="{!! asset('plugins/ckeditor/ckeditor.js') !!}"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="{!! asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js') !!}"
+            type="text/javascript"></script>
     <!-- Sparkline -->
     <script src="{!! asset('plugins/sparkline/jquery.sparkline.min.js') !!}" type="text/javascript"></script>
     <!-- AdminLTE App -->

@@ -19,43 +19,43 @@
         <div class="box box-default">
             <div class="box-header with-border">
                 <div class="pull-left">
-                    <a href="{{ URL::current() }}/create"
+                    <a href="{{ URL::current() }}/getCreate"
                        class="btn btn-primary pull-right">
                         Thêm mới</a>
                 </div>
-                <div class="columns columns-right btn-group pull-right">
-                    <button class="btn btn-default" type="button" name="refresh" title="Refresh"><i
-                                class="fa fa-refresh"></i></button>
-                    <div class="keep-open btn-group" title="Columns">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i
-                                    class="fa fa-columns"></i> <span class="caret"></span></button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><label><input type="checkbox" data-field="id" value="0"> ID</label></li>
-                            <li><label><input type="checkbox" data-field="name" value="1" checked="checked"> Asset
-                                    Category Name</label></li>
-                            <li><label><input type="checkbox" data-field="category_type" value="2"
-                                              checked="checked">
-                                    Type</label></li>
-                            <li><label><input type="checkbox" data-field="count" value="3" checked="checked">
-                                    Assets</label></li>
-                            <li><label><input type="checkbox" data-field="acceptance" value="4" checked="checked">
-                                    Acceptance</label></li>
-                            <li><label><input type="checkbox" data-field="eula" value="5" checked="checked">
-                                    EULA</label></li>
-                        </ul>
-                    </div>
-                    <div class="export btn-group">
-                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button"><i
-                                    class="fa fa-download"></i> <span class="caret"></span></button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li data-type="csv"><a href="javascript:void(0)">CSV</a></li>
-                            <li data-type="txt"><a href="javascript:void(0)">TXT</a></li>
-                            <li data-type="json"><a href="javascript:void(0)">JSON</a></li>
-                            <li data-type="xml"><a href="javascript:void(0)">XML</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="pull-right search"><input class="form-control" type="text" placeholder="Search"></div>
+                {{--<div class="columns columns-right btn-group pull-right">--}}
+                    {{--<button class="btn btn-default" type="button" name="refresh" title="Refresh"><i--}}
+                                {{--class="fa fa-refresh"></i></button>--}}
+                    {{--<div class="keep-open btn-group" title="Columns">--}}
+                        {{--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i--}}
+                                    {{--class="fa fa-columns"></i> <span class="caret"></span></button>--}}
+                        {{--<ul class="dropdown-menu" role="menu">--}}
+                            {{--<li><label><input type="checkbox" data-field="id" value="0"> ID</label></li>--}}
+                            {{--<li><label><input type="checkbox" data-field="name" value="1" checked="checked"> Asset--}}
+                                    {{--Category Name</label></li>--}}
+                            {{--<li><label><input type="checkbox" data-field="category_type" value="2"--}}
+                                              {{--checked="checked">--}}
+                                    {{--Type</label></li>--}}
+                            {{--<li><label><input type="checkbox" data-field="count" value="3" checked="checked">--}}
+                                    {{--Assets</label></li>--}}
+                            {{--<li><label><input type="checkbox" data-field="acceptance" value="4" checked="checked">--}}
+                                    {{--Acceptance</label></li>--}}
+                            {{--<li><label><input type="checkbox" data-field="eula" value="5" checked="checked">--}}
+                                    {{--EULA</label></li>--}}
+                        {{--</ul>--}}
+                    {{--</div>--}}
+                    {{--<div class="export btn-group">--}}
+                        {{--<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button"><i--}}
+                                    {{--class="fa fa-download"></i> <span class="caret"></span></button>--}}
+                        {{--<ul class="dropdown-menu" role="menu">--}}
+                            {{--<li data-type="csv"><a href="javascript:void(0)">CSV</a></li>--}}
+                            {{--<li data-type="txt"><a href="javascript:void(0)">TXT</a></li>--}}
+                            {{--<li data-type="json"><a href="javascript:void(0)">JSON</a></li>--}}
+                            {{--<li data-type="xml"><a href="javascript:void(0)">XML</a></li>--}}
+                        {{--</ul>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="pull-right search"><input class="form-control" type="text" placeholder="Search"></div>--}}
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -106,10 +106,12 @@
                                                 class="badge bg-green span-green-radio-order">{{ $iProjectInfo->order }}</span>
                                     </td>
                                     <td>
-                                        {!! Form::open(['method' => 'GET', 'route' => 'projectInfo.edit', 'class' =>'float-left'])!!}
-                                        {!! Form::hidden('id', $iProjectInfo->id)!!}
-                                        {!! Form::button('<i class="fa fa-pencil icon-white"></i>', ['class' => 'btn btn-warning btn-sm', 'type'=>'submit']) !!}
-                                        {!! Form::close() !!}
+                                        <a href="http://localhost/per_infomation_technology/public/admin/moduls/projectInfo/getEdit/{{ $iProjectInfo->id }}"
+                                           class="btn btn-warning btn-sm float-left"><i class="fa fa-pencil icon-white"></i></a>
+                                        {{--!! Form::open(['method' => 'GET', 'route' => ['projectInfo.getEdit', $iProjectInfo->id], 'class' =>'float-left'])!!}--}}
+                                        {{--{!! Form::hidden('id', $iProjectInfo->id)!!}--}}
+                                        {{--{!! Form::button('<i class="fa fa-pencil icon-white"></i>', ['class' => 'btn btn-warning btn-sm', 'type'=>'submit']) !!}--}}
+                                        {{--{!! Form::close() !!}--}}
                                         {{--<a class="glyphicon glyphicon-edit"--}}
                                         {{--href="{{ URL::current() }}/{{$iProjectInfo->id}}/edit"--}}
                                         {{--name="lk_show_dialog_info"></a>--}}
@@ -118,7 +120,7 @@
                                         {{--href="{{ URL::current() }}/{{$iProjectInfo->id}}/destroy"--}}
                                         {{--name="lk_delete_customer"></a>--}}
                                         {{--<input type="hidden" name="projectInfo" value="{{$iProjectInfo->id}}"/>--}}
-                                        {!! Form::open(['method' => 'DELETE', 'route' => 'projectInfo.delete', 'class' =>'delete-confirm float-left']) !!}
+                                        {!! Form::open(['method' => 'DELETE', 'route' => ['projectInfo.delete', $iProjectInfo->id], 'class' =>'delete-confirm float-left']) !!}
                                         {!! Form::hidden('id', $iProjectInfo->id)  !!}
                                         {!! Form::button('<i class="fa fa-trash icon-white"></i>', ['class' => 'btn btn-danger btn-sm', 'type'=>'submit']) !!}
                                         {!! Form::close() !!}

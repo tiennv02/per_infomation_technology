@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/templates/social-buttons.css" type="text/css">
     <link rel="stylesheet" href="css/templates/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/templates/creative.css" type="text/css">
+    <!--CKEditor-->
+    <link rel="stylesheet" href="{!! asset('plugins/ckeditor/contents.css') !!}">
     <!--notifications_start-->
     <link rel="stylesheet" href="css/bootstrap/bootstrap-notify.css" type="text/css">
     <link rel="stylesheet" href="css/notifications/alert_bangtidy.css" type="text/css">
