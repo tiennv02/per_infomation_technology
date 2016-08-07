@@ -23,6 +23,7 @@ class ProjectInfoController extends Controller
 
     public function __construct(ProjectInfoRepository $projectInfoRepository)
     {
+        $this->middleware('admin');
         $this->projectInfoRepository = $projectInfoRepository;
     }
 
@@ -37,13 +38,13 @@ class ProjectInfoController extends Controller
         return view('admin.moduls.projectInfo.edit')->with('projectInfo', new ProjectInfo());
     }
 
-    public function getEdit(Request $request, $projectInfoId)
+    public function getUpdate(Request $request, $projectInfoId)
     {
         $projectInfo = $this->projectInfoRepository->getProjectInfoById($projectInfoId);
         return view('admin.moduls.projectInfo.edit', compact('projectInfo'));
     }
 
-    public function delete()
+    public function postDelete()
     {
         $id = e(Input::get('id'));
         if (is_null($id)) {
@@ -53,12 +54,12 @@ class ProjectInfoController extends Controller
         if ($reponse->getResultCode() && $reponse->getResultCode() == Constants::$_resultCode["OK"]) {
             return redirect()->to("admin/moduls/projectInfo")->with('success', 'Đã xóa thành công');
         } else {
-            return redirect()->back()->withInput()->withErrors($reponse->getResultMessage());
+            return redirect()->back()->withInput()->with('error', $reponse->getResultMessage());
         }
         return redirect()->to('admin/moduls/projectInfo')->with('error', 'Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
     }
 
-    public function create()
+    public function postCreate()
     {
         $file_name = "";
         // upload file
@@ -69,7 +70,7 @@ class ProjectInfoController extends Controller
             $uploadFile = new UploadFile();
             $reponse = $uploadFile->uploadFile($image, $path);
             if ($reponse->getResultCode() && $reponse->getResultCode() == Constants::$_resultCode["ERROR"]) {
-                return redirect()->back()->withInput()->withErrors($reponses->getResultMessage());
+                return redirect()->back()->withInput()->with('error', $reponse->getResultMessage());
             }
         }
         // create a new model instance
@@ -83,12 +84,12 @@ class ProjectInfoController extends Controller
         if ($reponse->getResultCode() && $reponse->getResultCode() == Constants::$_resultCode["OK"]) {
             return redirect()->to("admin/moduls/projectInfo")->with('success', 'Đã thêm mới thành công');
         } else {
-            return redirect()->back()->withInput()->withErrors($reponse->getResultMessage());
+            return redirect()->back()->withInput()->with('error', $reponse->getResultMessage());
         }
-        return redirect()->to('admin/moduls/projectInfo/create')->with('error', 'Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
+        return redirect()->to('admin/moduls/projectInfo/create')->withErrors('Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
     }
 
-    public function update()
+    public function postUpdate()
     {
         $file_name = "";
         // upload file
@@ -99,17 +100,17 @@ class ProjectInfoController extends Controller
             $uploadFile = new UploadFile();
             $reponse = $uploadFile->uploadFile($image, $path);
             if ($reponse->getResultCode() && $reponse->getResultCode() == Constants::$_resultCode["ERROR"]) {
-                return redirect()->back()->withInput()->withErrors($reponses->getResultMessage());
+                return redirect()->back()->withInput()->with('error', $reponse->getResultMessage());
             }
         }
         $id = e(Input::get('id'));
         if (is_null($id)) {
-            return redirect()->to('admin/moduls/projectInfo')->with('error', 'Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
+            return redirect()->to('admin/moduls/projectInfo')->withErrors('Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
         }
         // get project info
         $projectInfo = $this->projectInfoRepository->getProjectInfoById($id);
         if (is_null($projectInfo)) {
-            return redirect()->to('admin/moduls/projectInfo')->with('error', 'Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
+            return redirect()->to('admin/moduls/projectInfo')->withErrors('Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
         }
         $projectInfo->name = e(Input::get('name'));
         $projectInfo->description = e(Input::get('description'));
@@ -122,8 +123,8 @@ class ProjectInfoController extends Controller
         if ($reponse->getResultCode() && $reponse->getResultCode() == Constants::$_resultCode["OK"]) {
             return redirect()->to("admin/moduls/projectInfo")->with('success', 'Đã sửa thông tin thành công');
         } else {
-            return redirect()->back()->withInput()->withErrors($reponse->getResultMessage());
+            return redirect()->back()->withInput()->with('error', $reponse->getResultMessage());
         }
-        return redirect()->to('admin/moduls/projectInfo/create')->with('error', 'Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
+        return redirect()->to('admin/moduls/projectInfo/create')->withErrors('Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
     }
 }

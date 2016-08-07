@@ -33,7 +33,9 @@
 .margin-bottom-0p {
     margin-bottom: 0px !important;
 }
-
+.padding-2p-0p{
+    padding: 2px 0px;
+}
 .padding-left-10p {
     padding-left: 10px !important;
 }

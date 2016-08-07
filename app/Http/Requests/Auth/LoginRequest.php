@@ -12,7 +12,7 @@ class LoginRequest extends Request {
 	public function rules()
 	{
 		return [
-			'log' => 'required', 'password' => 'required',
+			'email' => 'required', 'password' => 'required',
 		];
 	}
 

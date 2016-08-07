@@ -10,21 +10,21 @@
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     <title>VietStar</title>
-    <link rel="shortcut icon" href="img/admin/admin.png">
+    <link rel="shortcut icon" href="{!! asset('img/admin/admin.png') !!}">
 
     <!-- Bootstrap Core, social CSS -->
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/templates/agency.css" type="text/css">
-    <link rel="stylesheet" href="css/templates/social-buttons.css" type="text/css">
-    <link rel="stylesheet" href="css/templates/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/templates/creative.css" type="text/css">
+    <link rel="stylesheet" href="{!! asset('css/bootstrap/bootstrap.min.css') !!}" type="text/css">
+    <link rel="stylesheet" href="{!! asset('css/font-awesome/font-awesome.min.css') !!}" type="text/css">
+    <link rel="stylesheet" href="{!! asset('css/templates/agency.css') !!}" type="text/css">
+    <link rel="stylesheet" href="{!! asset('css/templates/social-buttons.css') !!}" type="text/css">
+    <link rel="stylesheet" href="{!! asset('css/templates/magnific-popup.css') !!}" type="text/css">
+    <link rel="stylesheet" href="{!! asset('css/templates/creative.css') !!}" type="text/css">
     <!--CKEditor-->
     <link rel="stylesheet" href="{!! asset('plugins/ckeditor/contents.css') !!}">
     <!--notifications_start-->
-    <link rel="stylesheet" href="css/bootstrap/bootstrap-notify.css" type="text/css">
-    <link rel="stylesheet" href="css/notifications/alert_bangtidy.css" type="text/css">
-    <link rel="stylesheet" href="css/notifications/alert_blackgloss.css" type="text/css">
+    <link rel="stylesheet" href="{!! asset('css/bootstrap/bootstrap-notify.css') !!}" type="text/css">
+    <link rel="stylesheet" href="{!! asset('css/notifications/alert_bangtidy.css') !!}" type="text/css">
+    <link rel="stylesheet" href="{!! asset('css/notifications/alert_blackgloss.css') !!}" type="text/css">
     <!--notifications_end-->
     <!-- Custom Fonts Start-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
@@ -33,8 +33,8 @@
           rel='stylesheet' type='text/css'>
     <!-- Custom Fonts End-->
     <!--Custom css-->
-    <link rel="stylesheet" href="css/common.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="{!! asset('css/common.css" type="text/css') !!}">
+    <link rel="stylesheet" href="{!! asset('css/main.css" type="text/css') !!}">
     <!-- jQuery -->
     <script src="js/jquery/jquery.js"></script>
 

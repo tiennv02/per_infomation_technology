@@ -19,7 +19,7 @@
         <div class="box box-default">
             <div class="box-header with-border">
                 <div class="pull-left">
-                    <a href="{{ URL::current() }}/getCreate"
+                    <a href="{{ URL::current() }}/create"
                        class="btn btn-primary pull-right">
                         Thêm mới</a>
                 </div>
@@ -106,7 +106,7 @@
                                                 class="badge bg-green span-green-radio-order">{{ $iProjectInfo->order }}</span>
                                     </td>
                                     <td>
-                                        <a href="http://localhost/per_infomation_technology/public/admin/moduls/projectInfo/getEdit/{{ $iProjectInfo->id }}"
+                                        <a href="http://localhost/per_infomation_technology/public/admin/moduls/projectInfo/update/{{ $iProjectInfo->id }}"
                                            class="btn btn-warning btn-sm float-left"><i class="fa fa-pencil icon-white"></i></a>
                                         {{--!! Form::open(['method' => 'GET', 'route' => ['projectInfo.getEdit', $iProjectInfo->id], 'class' =>'float-left'])!!}--}}
                                         {{--{!! Form::hidden('id', $iProjectInfo->id)!!}--}}

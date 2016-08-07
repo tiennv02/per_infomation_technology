@@ -21,6 +21,7 @@ class ContactsManagementController extends Controller
     public function __construct(ContactsRepository $contactsRepository)
     {
         $this->contactsRepository = $contactsRepository;
+        $this->middleware('admin');
     }
 
     public function index(Request $request)

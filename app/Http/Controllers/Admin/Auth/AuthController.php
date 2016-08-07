@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Objects\ObjectSendMail;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\RegisterRequest;
+use App\Http\Responses\Response;
 use App\Jobs\SendMail;
 use App\Repositories\UsersRepository;
 use Illuminate\Contracts\Auth\Guard;
@@ -24,7 +26,7 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest', ['except' => 'getLogout']);
+        $this->middleware('guest', ['except' => ['logout', 'getLogout']]);
     }
 
     /**
@@ -38,38 +40,33 @@ class AuthController extends Controller
         LoginRequest $request,
         Guard $auth)
     {
-        $logValue = $request->input('log');
-        var_dump($request);
-        $logAccess = filter_var($logValue, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
-        var_dump($request);
+        $email = $request->input('email');
+        $password = $request->input('password');
         $throttles = in_array(
             ThrottlesLogins::class, class_uses_recursive(get_class($this))
         );
-        var_dump($request);
         if ($throttles && $this->hasTooManyLoginAttempts($request)) {
             return redirect('/admin/login')
                 ->with('error', trans('front/login.maxattempt'))
-                ->withInput($request->only('log'));
+                ->withInput($request->only('email'));
         }
-        var_dump($request);
         $credentials = [
-            $logAccess => $logValue,
-            'password' => $request->input('password')
+            'email' => $email,
+            'password' => $password
         ];
-
         if (!$auth->validate($credentials)) {
             if ($throttles) {
                 $this->incrementLoginAttempts($request);
             }
 
-            return redirect('/admin/login')
+            return redirect('/auth/login')
                 ->with('error', trans('front/login.credentials'))
-                ->withInput($request->only('log'));
+                ->withInput($request->only('email'));
         }
 
         $user = $auth->getLastAttempted();
 
-        if ($user->confirmed) {
+        if ($user->id > 0) {
             if ($throttles) {
                 $this->clearLoginAttempts($request);
             }
@@ -80,7 +77,7 @@ class AuthController extends Controller
                 $request->session()->forget('user_id');
             }
 
-            return redirect('/');
+            return redirect('/admin');
         }
 
         $request->session()->put('user_id', $user->id);
@@ -100,14 +97,25 @@ class AuthController extends Controller
         RegisterRequest $request,
         UsersRepository $user_gestion)
     {
-        $user = $user_gestion->store(
-            $request->all(),
-            $confirmation_code = str_random(30)
+        $reponse = new Response();
+        $inputs = $request->all();
+        $response = $user_gestion->store(
+            $inputs,
+            $remember_token = str_random(30)
         );
-
-        $this->dispatch(new SendMail($user));
-
-        return redirect('/')->with('ok', trans('front/verify.message'));
+        if ($response && $response->getResultCode() == 'OK') {
+            // send mail
+            $objectSendMail = new ObjectSendMail();
+            $objectSendMail->setEmail($inputs['email']);
+            $objectSendMail->setUsername($inputs['name']);
+            $objectSendMail->setTitle('Thư cám ơn đã gửi thư liên hệ');
+            $objectSendMail->setContent('Bạn đã đăng ký thành công tài khoản');
+            $this->dispatch(new SendMail($objectSendMail));
+            return redirect('/auth/login')->with('success', trans('front/verify.message'));
+        } else {
+            return redirect()->back()->withInput()->with('error', $reponse->getResultMessage());
+        }
+        return redirect()->to('auth/register')->withErrors('error', 'Có lỗi xảy ra, Xin vui lòng thử lại sau!.');
     }
 
     /**
@@ -155,6 +163,23 @@ class AuthController extends Controller
      */
     public function getLogin()
     {
+        return view("admin.login");
+    }
+
+    /**
+     * Display screen register
+     *
+     * @return Response
+     */
+    public function getRegister()
+    {
+        return view("admin.register");
+    }
+
+    public function getLogout(Guard $auth)
+    {
+        $auth->logout();
+//        Auth::guard($this->getGuard())->logout();
         return view("admin.login");
     }
 }

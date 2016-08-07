@@ -2,217 +2,149 @@
 
 namespace App\Repositories;
 
-use App\Models\User, App\Models\Role;
+use App\Http\Responses\Response;
+use App\Models\Users;
 
 class UsersRepository extends BaseRepository
 {
 
-	/**
-	 * The Role instance.
-	 *
-	 * @var App\Models\Role
-	 */	
-	protected $role;
+    /**
+     * Create a new UserRepository instance.
+     *
+     * @param  App\Models\User $users
+     * @return void
+     */
+    public function __construct(
+        Users $users)
+    {
+        $this->model = $users;
+    }
 
-	/**
-	 * Create a new UserRepository instance.
-	 *
-   	 * @param  App\Models\User $user
-	 * @param  App\Models\Role $role
-	 * @return void
-	 */
-	public function __construct(
-		User $user, 
-		Role $role)
-	{
-		$this->model = $user;
-		$this->role = $role;
-	}
+    /**
+     * Save the User.
+     *
+     * @param  App\Models\User $users
+     * @param  Array $inputs
+     * @return void
+     */
+    private function save($users, $inputs)
+    {
+        $users->name = $inputs['name'];
+        $users->email = $inputs['email'];
+        $users->roles = 'admin';
 
-	/**
-	 * Save the User.
-	 *
-	 * @param  App\Models\User $user
-	 * @param  Array  $inputs
-	 * @return void
-	 */
-  	private function save($user, $inputs)
-	{		
-		if(isset($inputs['seen'])) 
-		{
-			$user->seen = $inputs['seen'] == 'true';		
-		} else {
+        $users->save();
+    }
 
-			$user->username = $inputs['username'];
-			$user->email = $inputs['email'];
+    /**
+     * Count the users.
+     *
+     * @return int
+     */
+    public function count()
+    {
+        return $this->model->count();
+    }
 
-			if(isset($inputs['role'])) {
-				$user->role_id = $inputs['role'];	
-			} else {
-				$role_user = $this->role->where('slug', 'user')->first();
-				$user->role_id = $role_user->id;
-			}
-		}
+    /**
+     * Create a user.
+     *
+     * @param  array $inputs
+     * @param  int $confirmation_code
+     * @return App\Models\User
+     */
+    public function store($inputs, $remember_token = null)
+    {
+        $reponse = new Response();
+        try {
+            $users = new $this->model;
+            $count = $users->where('email', '=', $inputs['email'])->count();
+            if ($count > 0) {
+                $reponse->setResultCode('ERROR');
+                $reponse->setResultMessage('Email đã được sử dụng');
+                return $reponse;
+            }
+            $users->password = bcrypt($inputs['password']);
 
-		$user->save();
-	}
+            if ($remember_token) {
+                $users->remember_token = $remember_token;
+            }
 
-	/**
-	 * Get users collection paginate.
-	 *
-	 * @param  int  $n
-	 * @param  string  $role
-	 * @return Illuminate\Support\Collection
-	 */
-	public function index($n, $role)
-	{
-		if($role != 'total')
-		{
-			return $this->model
-			->with('role')
-			->whereHas('role', function($q) use($role) {
-				$q->whereSlug($role);
-			})		
-			->oldest('seen')
-			->latest()
-			->paginate($n);			
-		}
+            $this->save($users, $inputs);
+            return $reponse;
+        } catch (Exception $ex) {
+            $reponse->setResultCode('ERROR');
+            $reponse->setResultMessage($response->getResultMessage());
+        }
+        return $reponse;
+    }
 
-		return $this->model
-		->with('role')		
-		->oldest('seen')
-		->latest()
-		->paginate($n);
-	}
+    /**
+     * Update a user.
+     *
+     * @param  array $inputs
+     * @param  App\Models\User $users
+     * @return void
+     */
+    public function update($inputs, $users)
+    {
+        $users->confirmed = isset($inputs['confirmed']);
 
-	/**
-	 * Count the users.
-	 *
-	 * @param  string  $role
-	 * @return int
-	 */
-	public function count($role = null)
-	{
-		if($role)
-		{
-			return $this->model
-			->whereHas('role', function($q) use($role) {
-				$q->whereSlug($role);
-			})->count();			
-		}
+        $this->save($users, $inputs);
+    }
 
-		return $this->model->count();
-	}
+    /**
+     * Get statut of authenticated user.
+     *
+     * @return string
+     */
+    public function getStatut()
+    {
+        return session('statut');
+    }
 
-	/**
-	 * Count the users.
-	 *
-	 * @param  string  $role
-	 * @return int
-	 */
-	public function counts()
-	{
-		$counts = [
-			'admin' => $this->count('admin'),
-			'redac' => $this->count('redac'),
-			'user' => $this->count('user')
-		];
+    /**
+     * Valid user.
+     *
+     * @param  bool $valid
+     * @param  int $id
+     * @return void
+     */
+    public function valid($valid, $id)
+    {
+        $users = $this->getById($id);
 
-		$counts['total'] = array_sum($counts);
+        $users->valid = $valid == 'true';
 
-		return $counts;
-	}
+        $users->save();
+    }
 
-	/**
-	 * Create a user.
-	 *
-	 * @param  array  $inputs
-	 * @param  int    $confirmation_code
-	 * @return App\Models\User 
-	 */
-	public function store($inputs, $confirmation_code = null)
-	{
-		$user = new $this->model;
+    /**
+     * Destroy a user.
+     *
+     * @param  App\Models\User $users
+     * @return void
+     */
+    public function destroyUser(User $users)
+    {
+        $users->comments()->delete();
 
-		$user->password = bcrypt($inputs['password']);
+        $users->delete();
+    }
 
-		if($confirmation_code) {
-			$user->confirmation_code = $confirmation_code;
-		} else {
-			$user->confirmed = true;
-		}
+    /**
+     * Confirm a user.
+     *
+     * @param  string $confirmation_code
+     * @return App\Models\User
+     */
+    public function confirm($confirmation_code)
+    {
+        $users = $this->model->whereConfirmationCode($confirmation_code)->firstOrFail();
 
-		$this->save($user, $inputs);
-
-		return $user;
-	}
-
-	/**
-	 * Update a user.
-	 *
-	 * @param  array  $inputs
-	 * @param  App\Models\User $user
-	 * @return void
-	 */
-	public function update($inputs, $user)
-	{		
-		$user->confirmed = isset($inputs['confirmed']);
-
-		$this->save($user, $inputs);
-	}
-
-	/**
-	 * Get statut of authenticated user.
-	 *
-	 * @return string
-	 */
-	public function getStatut()
-	{
-		return session('statut');
-	}
-
-	/**
-	 * Valid user.
-	 *
-     * @param  bool  $valid
-     * @param  int   $id
-	 * @return void
-	 */
-	public function valid($valid, $id)
-	{
-		$user = $this->getById($id);
-
-		$user->valid = $valid == 'true';
-
-		$user->save();
-	}
-
-	/**
-	 * Destroy a user.
-	 *
-	 * @param  App\Models\User $user
-	 * @return void
-	 */
-	public function destroyUser(User $user)
-	{
-		$user->comments()->delete();
-		
-		$user->delete();
-	}
-
-	/**
-	 * Confirm a user.
-	 *
-	 * @param  string  $confirmation_code
-	 * @return App\Models\User
-	 */
-	public function confirm($confirmation_code)
-	{
-		$user = $this->model->whereConfirmationCode($confirmation_code)->firstOrFail();
-
-		$user->confirmed = true;
-		$user->confirmation_code = null;
-		$user->save();
-	}
+        $users->confirmed = true;
+        $users->confirmation_code = null;
+        $users->save();
+    }
 
 }

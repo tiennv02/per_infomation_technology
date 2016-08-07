@@ -149,7 +149,7 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src={!! asset('img/user2-160x160.jpg') !!} alt="UserImage" class="user-image">
-                            <span class="hidden-xs">Nguyễn Văn Tiến</span>
+                            <span class="hidden-xs">{!! Auth::user()->name  !!} </span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
@@ -179,7 +179,8 @@
                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    {{--<a href="#" class="btn btn-default btn-flat">Sign out</a>--}}
+                                    {!! link_to('auth/logout','Sign out',['class'=>'btn btn-default btn-flat'])  !!}
                                 </div>
                             </li>
                         </ul>
@@ -196,8 +197,7 @@
                     <img src="{!! asset('img/user2-160x160.jpg') !!}" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Nguyễn Văn Tiến</p>
-                    {{--<a href="#"><i class="fa fa-circle text-success"></i> Online</a>--}}
+                    <p>{!! Auth::user()->roles  !!}</p>
                 </div>
             </div>
             <ul class="sidebar-menu">

@@ -22,6 +22,11 @@ Route::group(['middleware' => ['web']], function () {
      */
     Route::get('/auth/login', 'Admin\Auth\AuthController@getLogin');
     Route::post('/auth/login', 'Admin\Auth\AuthController@postLogin');
+    Route::get('/auth/logout', 'Admin\Auth\AuthController@getLogout');
+    Route::get('/auth/resetPassword', 'Admin\Auth\AuthController@getResetPassword');
+    Route::post('/auth/resetPassword', 'Admin\Auth\AuthController@postResetPassword');
+    Route::get('/auth/register', 'Admin\Auth\AuthController@getRegister');
+    Route::post('/auth/register', 'Admin\Auth\AuthController@postRegister');
     Route::get('/admin', 'Admin\AdminController@index');
     /*
      * Contacts Management
@@ -39,17 +44,12 @@ Route::group(['middleware' => ['web']], function () {
     //view
     Route::get('admin/moduls/projectInfo/getView/{projectInfoId}', 'Admin\Moduls\ProjectInfo\ProjectInfoController@getView');
     //create
-    Route::get('admin/moduls/projectInfo/getCreate', 'Admin\Moduls\ProjectInfo\ProjectInfoController@getCreate');
-    Route::post('admin/moduls/projectInfo/create', 'Admin\Moduls\ProjectInfo\ProjectInfoController@create');
+    Route::get('admin/moduls/projectInfo/create', 'Admin\Moduls\ProjectInfo\ProjectInfoController@getCreate');
+    Route::post('admin/moduls/projectInfo/create', 'Admin\Moduls\ProjectInfo\ProjectInfoController@postCreate');
     //edit
-    Route::get('admin/moduls/projectInfo/getEdit/{projectInfoId}', ['as' => 'projectInfo.getEdit', 'uses' => 'Admin\Moduls\ProjectInfo\ProjectInfoController@getEdit']);
-    Route::post('admin/moduls/projectInfo/update', 'Admin\Moduls\ProjectInfo\ProjectInfoController@update');
+    Route::get('admin/moduls/projectInfo/update/{projectInfoId}', ['as' => 'projectInfo.getUpdate', 'uses' => 'Admin\Moduls\ProjectInfo\ProjectInfoController@getUpdate']);
+    Route::post('admin/moduls/projectInfo/update', 'Admin\Moduls\ProjectInfo\ProjectInfoController@postUpdate');
     //delete
-    Route::delete('admin/moduls/projectInfo/delete', ['as' => 'projectInfo.delete', 'uses' => 'Admin\Moduls\ProjectInfo\ProjectInfoController@delete']);
-    /*
-     * Checkout connect Databases
-     */
-    Route::get('/checkDB', function () {
-        dd(DB::connection()->getDatabaseName());
-    });
+    Route::delete('admin/moduls/projectInfo/delete', ['as' => 'projectInfo.delete', 'uses' => 'Admin\Moduls\ProjectInfo\ProjectInfoController@postDelete']);
+
 });

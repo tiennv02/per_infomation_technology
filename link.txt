@@ -146,3 +146,14 @@ composer dump-autoload
 composer require guzzlehttp/guzzle
 composer require barryvdh/laravel-debugbar 
 composer create-project laravel/laravel ajax-crud
+
+
+issues:
+http://stackoverflow.com/questions/34438463/laravel-5-2-errors-not-appearing-in-blade
+http://stackoverflow.com/questions/28516454/laravel-5-user-model-not-found
+http://stackoverflow.com/questions/31253090/fire-an-event-when-the-user-logins-in-laravel
+http://laravel.io/forum/09-07-2014-how-to-display-logged-in-user-name-or-email-if-name-is-not-provided
+//logout issues_start
+https://github.com/tymondesigns/jwt-auth/issues/513
+http://stackoverflow.com/questions/34479994/laravel-5-2-authlogout-is-not-working
+//logout issues_end

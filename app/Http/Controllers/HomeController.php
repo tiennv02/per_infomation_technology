@@ -45,7 +45,7 @@ class HomeController extends Controller
                 $objectSendMail->setUsername($field['name']);
                 $objectSendMail->setTitle('Thư cám ơn đã gửi thư liên hệ');
                 $objectSendMail->setContent($field['content']);
-//                $this->dispatch(new SendMail($objectSendMail));
+                $this->dispatch(new SendMail($objectSendMail));
             } else {
                 $data->setResultCode('ERROR');
                 $data->setResultMessage($response->getResultMessage());

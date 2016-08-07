@@ -1,3 +1,17 @@
+@if ($errors->any())
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-danger  margin-bottom-0p">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <i class="fa fa-exclamation-circle faa-pulse animated"></i>
+                <strong>Error: </strong>
+               Có lỗi xảy ra, Xin vui lòng thử lại sau!.
+            </div>
+        </div>
+    </div>
+@endif
+
+
 @if ($message = Session::get('status'))
     <div class="row">
         <div class="col-md-12">

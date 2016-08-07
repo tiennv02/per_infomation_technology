@@ -6,6 +6,7 @@
   "type": "project",
   "require": {
     "php": ">=5.5.9",
+    "landish/pagination": "~1.0",
     "laravel/framework": "5.2.*",
     "laravelcollective/html": "5.2.*",
     "bestmomo/filemanager": "1.1.2",
